@@ -27,13 +27,16 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Make view datasource and delegate
         self.recievedTableView.delegate = self
         self.recievedTableView.dataSource = self
         
+        //Remove data and reload
         self.surveyData.removeAllObjects()
         self.loadData()
         
+        //Add the refresh capability
         self.recievedTableView.addSubview(self.refreshControl)
 
     }
@@ -53,6 +56,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
     
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! RecievedTableViewCell
         
+        //Get survey info for specific row from parse
         let surveyInfo = self.surveyData.objectAtIndex(indexPath.row) as! PFObject
         
         cell.questionTextView.text = (surveyInfo.objectForKey("question") as! String)
@@ -76,6 +80,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         let surveyIdentifier = self.surveyData.objectAtIndex(indexPath.row) as! PFObject
         let surveyObjectId = surveyIdentifier.objectId! as String
         
+        //Get results data from parse to let user know how many people have taken the fripple
         if ((PFUser.currentUser()) != nil) {
             
             let resultsData = NSMutableArray()
@@ -95,6 +100,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
             })
         }
         
+        //Lets the user know if they still need to take a fripple before they can see results
         if ((PFUser.currentUser()) != nil) {
             
             let resultsData = NSMutableArray()
@@ -131,6 +137,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         self.surveyType = (surveyInfo.objectForKey("surveyTypeText") as! String)
         self.surveyID = surveyInfo.objectId! as String
         
+        //Specific actions based on what type of fripple and if the user has taken it or not
         if self.surveyType == "Text" && selectedCell.takeLabel.text == "Take Fripple" {
             self.performSegueWithIdentifier("TakeTextSegue", sender: self)
         }
@@ -154,6 +161,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+    //Code to handle deleting rows
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
         return true
@@ -173,6 +181,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    //Specific segues based on what type of fripple and if the user has taken it or not
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if (segue.identifier == "TakeTextSegue") {
@@ -216,6 +225,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         toViewController.transitioningDelegate = self.transitionManagerTwo
     }
     
+    //Code to get survey data from parse and provide to view
     func loadData() {
         
         self.activityView.layer.cornerRadius = 10

@@ -24,7 +24,7 @@ class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
         self.emailField.layer.borderColor = borderColor.CGColor
         self.emailField.leftViewMode = UITextFieldViewMode.Always
         
-        self.recoverButton.layer.cornerRadius = 10
+        self.recoverButton.layer.cornerRadius = 7
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,18 @@ class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
         
         dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        
+        return false
     }
 
 }

@@ -25,16 +25,17 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        contactsTableView.backgroundColor = UIColor(red: 246/255, green: 245/255, blue: 245/255, alpha: 1)
+        self.contactsTableView.backgroundColor = UIColor(red: 246/255, green: 245/255, blue: 245/255, alpha: 1)
         
-        addButton.alpha = 0
-        backButton.alpha = 1
+        self.addButton.alpha = 0
+        self.backButton.alpha = 1
         
-        contactsTableView.allowsMultipleSelection = true
+        self.contactsTableView.allowsMultipleSelection = true
         
-        contactsTableView.delegate = self
-        contactsTableView.dataSource = self
+        self.contactsTableView.delegate = self
+        self.contactsTableView.dataSource = self
         
+        //Get the contacts from the contacts model by calling method and activating delegate didDownloadContacts below
         ContactsModel.sharedInstance.delegate = self
         ContactsModel.sharedInstance.accessAddressBook()
         
@@ -46,9 +47,9 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func didDownloadContacts(listOfContacts: [ContactsClass]) {
-        contactsArray = listOfContacts
-        contactsArray.sortInPlace({ $1.name > $0.name })
-        dataToDisplay = contactsArray
+        self.contactsArray = listOfContacts
+        self.contactsArray.sortInPlace({ $1.name > $0.name })
+        self.dataToDisplay = contactsArray
         dispatch_async(dispatch_get_main_queue(), {
             self.contactsTableView.reloadData()
         })
@@ -86,6 +87,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         let checkMark = UIImageView(image: UIImage(named: "Yes"))
         selectedCell.accessoryView = checkMark
         
+        //Capture contact selected and add to array
         if !selectedContacts.contains((selectedName!)) {
             
             selectedContacts.append(selectedName!)
@@ -130,6 +132,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 
+    //Code to pass selected contacts back to view controllers
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         

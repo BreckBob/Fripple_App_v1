@@ -22,24 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+        //Code to handle making Splash view the initial one
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
         let initialViewController = storyboard.instantiateViewControllerWithIdentifier("SplashViewController")
-        
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
+        //Parse code to enable local datastore. Not being used currently
         Parse.enableLocalDatastore()
         
         // Initialize Parse.
         Parse.setApplicationId("DtEhd5MxsYdelQL14IkuBXkhEKvSI6SU92crIrYA",
             clientKey: "afyAkHukBJV7UF1NTJcD4hPk4wqo9EvUMMqU8u2G")
         
-        // [Optional] Track statistics around application opens.
+        //Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        //Code to incorporate Facebook. Not right now cause cannot bring in phone number
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         
         return true
@@ -62,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
+        //Code to incorporate Facebook. Not right now cause cannot bring in phone number
         FBSDKAppEvents.activateApp()
     }
 
@@ -69,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    //Code to incorporate Facebook. Not right now cause cannot bring in phone number
     func application(application: UIApplication,
         openURL url: NSURL,
         sourceApplication: String?,

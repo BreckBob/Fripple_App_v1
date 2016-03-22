@@ -26,7 +26,7 @@ class MenuTableViewController: UITableViewController, MFMailComposeViewControlle
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        //Menus options and what to do based on each case
         switch indexPath.row {
         case 0:
             let about = self.storyboard?.instantiateViewControllerWithIdentifier("AboutViewController") as! AboutViewController
@@ -77,6 +77,7 @@ class MenuTableViewController: UITableViewController, MFMailComposeViewControlle
         }
     }
     
+    //Set up the email capabilities
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         switch(result) {
             

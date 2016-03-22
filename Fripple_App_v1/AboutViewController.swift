@@ -14,7 +14,6 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +23,8 @@ class AboutViewController: UIViewController {
     
     
     @IBAction func closeButton(sender: AnyObject) {
-            
+        
+        //Go back to the container view
         let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
         self.presentViewController(welcome, animated: false, completion: nil)
         

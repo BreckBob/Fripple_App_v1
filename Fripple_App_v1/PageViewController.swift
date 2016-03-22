@@ -17,11 +17,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Make this view the datasource and delegate
         self.dataSource = self
         self.delegate = self
         
+        //Create array of viewcontrollers for the pageview
         let startingViewController = self.viewControllerAtIndex(self.index)
-        let viewControllers: NSArray = [startingViewController]
+        let viewControllers = [startingViewController]
         self.setViewControllers(viewControllers as? [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
     }
 
@@ -33,6 +35,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        //Layout the pageviews
         let subViews: NSArray = view.subviews
         var scrollView: UIScrollView? = nil
         var pageControl: UIPageControl? = nil
@@ -54,6 +57,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         }
     }
     
+    //Handle moving forward in pageview
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
         let identifier = viewController.restorationIdentifier
@@ -65,6 +69,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return self.viewControllerAtIndex(newIndex)
     }
     
+    //Moving backwards in pageview
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
         let identifier = viewController.restorationIdentifier
@@ -76,6 +81,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return self.viewControllerAtIndex(newIndex)
     }
     
+    //Tell view which view controller to insert based on location in array
     func viewControllerAtIndex(index: Int) -> UIViewController! {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

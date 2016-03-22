@@ -18,14 +18,14 @@ class ContactsModel: NSObject {
     func createAddressBook() {
         var error: Unmanaged<CFErrorRef>?
         
-        addressBook = ABAddressBookCreateWithOptions(nil, &error).takeRetainedValue()
+        self.addressBook = ABAddressBookCreateWithOptions(nil, &error).takeRetainedValue()
     }
     
     func accessAddressBook () {
         switch ABAddressBookGetAuthorizationStatus(){
         case .Authorized:
             print("Already authorized")
-            createAddressBook()
+            self.createAddressBook()
             self.beginContactSearch()
             
         case .Denied:
