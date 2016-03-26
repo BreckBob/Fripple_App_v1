@@ -36,6 +36,7 @@ class TakeImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up formats for view and load fripple data
         images = [answerImage1, answerImage2, answerImage3, answerImage4]
 
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -50,6 +51,7 @@ class TakeImageViewController: UIViewController {
         self.activityView.alpha = 1
         UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         
+        //Upload data from parse
         loadData()
         
         //Add the tap gesture to select text option 1
@@ -84,6 +86,7 @@ class TakeImageViewController: UIViewController {
         
     }
     
+    //Code to get data from parse
     func loadData() {
         
         if ((PFUser.currentUser()) != nil) {
@@ -138,6 +141,7 @@ class TakeImageViewController: UIViewController {
         }
     }
     
+    //Code when user selects their answer to change image
     func tappedAnswer1() {
         
         self.selectedAnswer = 1
@@ -182,6 +186,7 @@ class TakeImageViewController: UIViewController {
         
     }
     
+    //Submit the users answers to parse
     @IBAction func submitButtonTapped(sender: AnyObject) {
         
         if self.selectedAnswer != 0 {

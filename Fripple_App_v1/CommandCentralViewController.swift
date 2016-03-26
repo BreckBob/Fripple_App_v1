@@ -31,6 +31,7 @@ class CommandCentralViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Function to get survey info
         self.surveysQuery()
         
         if PFUser.currentUser() != nil {

@@ -63,25 +63,6 @@ class WelcomeViewController: UIViewController {
         
     }
     
-//    @IBAction func fbLoginClick(sender: AnyObject) {
-//        
-//        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions) {
-//            (user: PFUser?, error: NSError?) -> Void in
-//            if let user = user {
-//                if user.isNew {
-//                    print("User signed up and logged in through Facebook!")
-//                    user.saveInBackground()
-//                    self.goToCommandCentral()
-//                } else {
-//                    print("User logged in through Facebook!")
-//                    self.goToCommandCentral()
-//                }
-//            } else {
-//                print("Uh oh. The user cancelled the Facebook login.")
-//            }
-//        }
-//    }
-    
     func goToCommandCentral() {
         
         let container = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController

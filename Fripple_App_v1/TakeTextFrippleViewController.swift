@@ -37,6 +37,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up formats for view and load fripple data
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         
         self.surveyQuestion.layer.cornerRadius = 5
@@ -71,6 +72,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         self.activityView.alpha = 1
         UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         
+        //Upload data from parse
         loadData()
         
         //Add the tap gesture to select text option 1
@@ -105,6 +107,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         dismissViewControllerAnimated(false, completion: nil)
     }
     
+    //Code to get data from parse
     func loadData() {
         if ((PFUser.currentUser()) != nil) {
             let findSurveyData:PFQuery = PFQuery(className: "Survey")
@@ -173,6 +176,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //Code when user selects their answer to change image
     func tappedAnswer1() {
         
          self.selectedAnswer = 1
@@ -217,6 +221,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //Submit the users answers to parse
     @IBAction func submitButtonTapped(sender: AnyObject) {
         
         if self.selectedAnswer != 0 {

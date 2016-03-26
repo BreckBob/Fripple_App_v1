@@ -20,7 +20,7 @@ class ContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //Notifications to listen for left/right swipes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenuLeft", name: "toggleMenuLeft", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "swipedRight", name: "swipedRight", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "swipedLeft", name: "swipedLeft", object: nil)

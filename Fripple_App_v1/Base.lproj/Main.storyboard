@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ffu-zI-oSr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ffu-zI-oSr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -297,7 +297,6 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="forgotPassword:" destination="cVC-mL-aiD" eventType="touchUpInside" id="WO3-Au-eKw"/>
                                     <segue destination="nCs-uF-wCk" kind="show" id="hbm-E2-Oiw"/>
                                 </connections>
                             </button>
@@ -346,10 +345,10 @@
                             <mask key="constraints">
                                 <exclude reference="82W-VG-oLh"/>
                                 <exclude reference="AdJ-BY-ese"/>
-                                <exclude reference="fYw-xO-mkS"/>
-                                <exclude reference="wWB-2K-slU"/>
                                 <exclude reference="p9E-HT-CUW"/>
                                 <exclude reference="xr9-zL-5Uc"/>
+                                <exclude reference="fYw-xO-mkS"/>
+                                <exclude reference="wWB-2K-slU"/>
                                 <exclude reference="F1x-I8-bMN"/>
                                 <exclude reference="mVa-78-obc"/>
                                 <exclude reference="t6I-XL-cUA"/>
@@ -367,10 +366,10 @@
                             <mask key="constraints">
                                 <include reference="82W-VG-oLh"/>
                                 <include reference="AdJ-BY-ese"/>
-                                <include reference="fYw-xO-mkS"/>
-                                <include reference="wWB-2K-slU"/>
                                 <include reference="p9E-HT-CUW"/>
                                 <include reference="xr9-zL-5Uc"/>
+                                <include reference="fYw-xO-mkS"/>
+                                <include reference="wWB-2K-slU"/>
                                 <include reference="F1x-I8-bMN"/>
                                 <include reference="mVa-78-obc"/>
                                 <include reference="t6I-XL-cUA"/>
@@ -685,47 +684,47 @@
                                 <exclude reference="W6D-QZ-1MX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="07q-pC-TLf"/>
-                                <exclude reference="jGT-y6-27Z"/>
-                                <exclude reference="q9Q-QT-Pyn"/>
-                                <exclude reference="EXI-qP-6n3"/>
-                                <exclude reference="xc6-F0-cyr"/>
-                                <exclude reference="yFq-m4-P2r"/>
-                                <exclude reference="CR4-NI-cHu"/>
-                                <exclude reference="Fgf-ka-ysP"/>
-                                <exclude reference="Tyb-vn-ONi"/>
-                                <exclude reference="Zh0-k9-gYc"/>
-                                <exclude reference="hXr-vO-LVn"/>
-                                <exclude reference="4FU-U2-QRL"/>
-                                <exclude reference="YQ5-Kv-1rU"/>
-                                <exclude reference="mxo-eS-UwE"/>
-                                <exclude reference="XvV-CA-ei9"/>
-                                <exclude reference="bpO-Zm-EL3"/>
-                                <exclude reference="Elu-YS-4BL"/>
-                                <exclude reference="vlt-qa-I2C"/>
-                                <exclude reference="xId-OV-a8O"/>
-                                <exclude reference="7Af-Pq-h4k"/>
-                                <exclude reference="PSG-zj-Nn6"/>
-                                <exclude reference="YGX-Bl-eVy"/>
+                                <exclude reference="HYa-OT-Sq9"/>
+                                <exclude reference="qA1-Sc-5hT"/>
+                                <exclude reference="r0c-Ol-Czl"/>
                                 <exclude reference="2k2-fG-9if"/>
                                 <exclude reference="8HT-ze-Jtd"/>
                                 <exclude reference="sE8-jy-yxF"/>
                                 <exclude reference="0kY-FQ-Nau"/>
                                 <exclude reference="BjA-28-K4b"/>
                                 <exclude reference="HQb-t2-p8F"/>
-                                <exclude reference="3uN-RC-mvJ"/>
-                                <exclude reference="bax-7x-5J4"/>
-                                <exclude reference="uHs-DJ-UJf"/>
-                                <exclude reference="vV5-Al-llj"/>
-                                <exclude reference="qA1-Sc-5hT"/>
-                                <exclude reference="r0c-Ol-Czl"/>
-                                <exclude reference="tOF-uE-USH"/>
-                                <exclude reference="wNE-mQ-ugn"/>
+                                <exclude reference="4FU-U2-QRL"/>
+                                <exclude reference="YQ5-Kv-1rU"/>
+                                <exclude reference="mxo-eS-UwE"/>
+                                <exclude reference="Elu-YS-4BL"/>
+                                <exclude reference="vlt-qa-I2C"/>
+                                <exclude reference="xId-OV-a8O"/>
+                                <exclude reference="7Af-Pq-h4k"/>
+                                <exclude reference="PSG-zj-Nn6"/>
+                                <exclude reference="YGX-Bl-eVy"/>
+                                <exclude reference="Tyb-vn-ONi"/>
+                                <exclude reference="Zh0-k9-gYc"/>
+                                <exclude reference="hXr-vO-LVn"/>
                                 <exclude reference="0f1-JZ-7dy"/>
                                 <exclude reference="44S-7W-be9"/>
                                 <exclude reference="4tD-lY-3RK"/>
                                 <exclude reference="s5I-AE-oqQ"/>
-                                <exclude reference="HYa-OT-Sq9"/>
+                                <exclude reference="uHs-DJ-UJf"/>
+                                <exclude reference="vV5-Al-llj"/>
+                                <exclude reference="tOF-uE-USH"/>
+                                <exclude reference="wNE-mQ-ugn"/>
+                                <exclude reference="CR4-NI-cHu"/>
+                                <exclude reference="Fgf-ka-ysP"/>
+                                <exclude reference="XvV-CA-ei9"/>
+                                <exclude reference="bpO-Zm-EL3"/>
+                                <exclude reference="07q-pC-TLf"/>
+                                <exclude reference="jGT-y6-27Z"/>
+                                <exclude reference="q9Q-QT-Pyn"/>
+                                <exclude reference="3uN-RC-mvJ"/>
+                                <exclude reference="bax-7x-5J4"/>
+                                <exclude reference="EXI-qP-6n3"/>
+                                <exclude reference="xc6-F0-cyr"/>
+                                <exclude reference="yFq-m4-P2r"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -747,47 +746,47 @@
                                 <include reference="W6D-QZ-1MX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="07q-pC-TLf"/>
-                                <include reference="jGT-y6-27Z"/>
-                                <include reference="q9Q-QT-Pyn"/>
-                                <include reference="EXI-qP-6n3"/>
-                                <include reference="xc6-F0-cyr"/>
-                                <include reference="yFq-m4-P2r"/>
-                                <include reference="CR4-NI-cHu"/>
-                                <include reference="Fgf-ka-ysP"/>
-                                <include reference="Tyb-vn-ONi"/>
-                                <include reference="Zh0-k9-gYc"/>
-                                <include reference="hXr-vO-LVn"/>
-                                <include reference="4FU-U2-QRL"/>
-                                <include reference="YQ5-Kv-1rU"/>
-                                <include reference="mxo-eS-UwE"/>
-                                <include reference="XvV-CA-ei9"/>
-                                <include reference="bpO-Zm-EL3"/>
-                                <include reference="Elu-YS-4BL"/>
-                                <include reference="vlt-qa-I2C"/>
-                                <include reference="xId-OV-a8O"/>
-                                <include reference="7Af-Pq-h4k"/>
-                                <include reference="PSG-zj-Nn6"/>
-                                <include reference="YGX-Bl-eVy"/>
+                                <include reference="HYa-OT-Sq9"/>
+                                <include reference="qA1-Sc-5hT"/>
+                                <include reference="r0c-Ol-Czl"/>
                                 <include reference="2k2-fG-9if"/>
                                 <include reference="8HT-ze-Jtd"/>
                                 <include reference="sE8-jy-yxF"/>
                                 <include reference="0kY-FQ-Nau"/>
                                 <include reference="BjA-28-K4b"/>
                                 <include reference="HQb-t2-p8F"/>
-                                <include reference="3uN-RC-mvJ"/>
-                                <include reference="bax-7x-5J4"/>
-                                <include reference="uHs-DJ-UJf"/>
-                                <include reference="vV5-Al-llj"/>
-                                <include reference="qA1-Sc-5hT"/>
-                                <include reference="r0c-Ol-Czl"/>
-                                <include reference="tOF-uE-USH"/>
-                                <include reference="wNE-mQ-ugn"/>
+                                <include reference="4FU-U2-QRL"/>
+                                <include reference="YQ5-Kv-1rU"/>
+                                <include reference="mxo-eS-UwE"/>
+                                <include reference="Elu-YS-4BL"/>
+                                <include reference="vlt-qa-I2C"/>
+                                <include reference="xId-OV-a8O"/>
+                                <include reference="7Af-Pq-h4k"/>
+                                <include reference="PSG-zj-Nn6"/>
+                                <include reference="YGX-Bl-eVy"/>
+                                <include reference="Tyb-vn-ONi"/>
+                                <include reference="Zh0-k9-gYc"/>
+                                <include reference="hXr-vO-LVn"/>
                                 <include reference="0f1-JZ-7dy"/>
                                 <include reference="44S-7W-be9"/>
                                 <include reference="4tD-lY-3RK"/>
                                 <include reference="s5I-AE-oqQ"/>
-                                <include reference="HYa-OT-Sq9"/>
+                                <include reference="uHs-DJ-UJf"/>
+                                <include reference="vV5-Al-llj"/>
+                                <include reference="tOF-uE-USH"/>
+                                <include reference="wNE-mQ-ugn"/>
+                                <include reference="CR4-NI-cHu"/>
+                                <include reference="Fgf-ka-ysP"/>
+                                <include reference="XvV-CA-ei9"/>
+                                <include reference="bpO-Zm-EL3"/>
+                                <include reference="07q-pC-TLf"/>
+                                <include reference="jGT-y6-27Z"/>
+                                <include reference="q9Q-QT-Pyn"/>
+                                <include reference="3uN-RC-mvJ"/>
+                                <include reference="bax-7x-5J4"/>
+                                <include reference="EXI-qP-6n3"/>
+                                <include reference="xc6-F0-cyr"/>
+                                <include reference="yFq-m4-P2r"/>
                             </mask>
                         </variation>
                     </view>
@@ -911,7 +910,6 @@
                                     <color key="titleColor" red="0.30980392156862746" green="0.27450980392156865" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="forgotPassword:" destination="cVC-mL-aiD" eventType="touchUpInside" id="YJp-4j-TfU"/>
                                     <segue destination="nCs-uF-wCk" kind="show" id="s7r-Fk-kbA"/>
                                 </connections>
                             </button>
@@ -1121,6 +1119,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IYS-KB-m2P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rtw-Q4-0YE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Yu5-A5-EWp">
@@ -1152,10 +1151,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="a8k-JO-Ssf"/>
-                                        <exclude reference="ZSB-Zo-uNO"/>
                                         <exclude reference="4yJ-9M-Yu3"/>
-                                        <exclude reference="vn4-KI-gbu"/>
                                         <exclude reference="Rgy-iE-a7f"/>
+                                        <exclude reference="ZSB-Zo-uNO"/>
+                                        <exclude reference="vn4-KI-gbu"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -1164,10 +1163,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="a8k-JO-Ssf"/>
-                                        <include reference="ZSB-Zo-uNO"/>
                                         <include reference="4yJ-9M-Yu3"/>
-                                        <include reference="vn4-KI-gbu"/>
                                         <include reference="Rgy-iE-a7f"/>
+                                        <include reference="ZSB-Zo-uNO"/>
+                                        <include reference="vn4-KI-gbu"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1199,10 +1198,14 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.82352941180000006" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="TV7-AX-0cf"/>
-                                    <constraint firstAttribute="width" constant="200" id="VGk-Be-YNp"/>
+                                    <constraint firstAttribute="height" constant="42" id="TV7-AX-0cf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="VGk-Be-YNp">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="224"/>
+                                    </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
                                 <state key="normal" title="RECOVER PASSWORD">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1218,6 +1221,9 @@
                                         <include reference="VGk-Be-YNp"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="recoverButtonTapped:" destination="nCs-uF-wCk" eventType="touchUpInside" id="BNB-OB-JDW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1247,21 +1253,21 @@
                                 <exclude reference="VAw-Br-5Yc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="uaH-Cr-VM4"/>
+                                <exclude reference="Dei-qz-vVw"/>
+                                <exclude reference="hIU-gA-fhE"/>
+                                <exclude reference="joX-kL-0qX"/>
+                                <exclude reference="E7M-PA-9WF"/>
+                                <exclude reference="Ojs-Jp-MTk"/>
+                                <exclude reference="Lhx-q6-90b"/>
+                                <exclude reference="dmR-EH-hbr"/>
+                                <exclude reference="tuq-Be-tkx"/>
                                 <exclude reference="6Fs-BG-qHS"/>
                                 <exclude reference="Z8y-TH-Ns4"/>
                                 <exclude reference="vrK-jB-oSX"/>
                                 <exclude reference="ND6-11-RsM"/>
                                 <exclude reference="YCG-zh-JBr"/>
                                 <exclude reference="yp0-f4-d8c"/>
-                                <exclude reference="Lhx-q6-90b"/>
-                                <exclude reference="dmR-EH-hbr"/>
-                                <exclude reference="tuq-Be-tkx"/>
-                                <exclude reference="Dei-qz-vVw"/>
-                                <exclude reference="hIU-gA-fhE"/>
-                                <exclude reference="joX-kL-0qX"/>
-                                <exclude reference="E7M-PA-9WF"/>
-                                <exclude reference="Ojs-Jp-MTk"/>
-                                <exclude reference="uaH-Cr-VM4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1273,21 +1279,21 @@
                                 <include reference="VAw-Br-5Yc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="uaH-Cr-VM4"/>
+                                <include reference="Dei-qz-vVw"/>
+                                <include reference="hIU-gA-fhE"/>
+                                <include reference="joX-kL-0qX"/>
+                                <include reference="E7M-PA-9WF"/>
+                                <include reference="Ojs-Jp-MTk"/>
+                                <include reference="Lhx-q6-90b"/>
+                                <include reference="dmR-EH-hbr"/>
+                                <include reference="tuq-Be-tkx"/>
                                 <include reference="6Fs-BG-qHS"/>
                                 <include reference="Z8y-TH-Ns4"/>
                                 <include reference="vrK-jB-oSX"/>
                                 <include reference="ND6-11-RsM"/>
                                 <include reference="YCG-zh-JBr"/>
                                 <include reference="yp0-f4-d8c"/>
-                                <include reference="Lhx-q6-90b"/>
-                                <include reference="dmR-EH-hbr"/>
-                                <include reference="tuq-Be-tkx"/>
-                                <include reference="Dei-qz-vVw"/>
-                                <include reference="hIU-gA-fhE"/>
-                                <include reference="joX-kL-0qX"/>
-                                <include reference="E7M-PA-9WF"/>
-                                <include reference="Ojs-Jp-MTk"/>
-                                <include reference="uaH-Cr-VM4"/>
                             </mask>
                         </variation>
                     </view>
@@ -1648,6 +1654,9 @@ We implement security measures designed to protect your information from unautho
                                 <exclude reference="a4L-XP-98w"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0ea-pS-fWQ"/>
+                                <exclude reference="FpP-cT-tb4"/>
+                                <exclude reference="GRI-Ct-kje"/>
                                 <exclude reference="8bP-De-eRq"/>
                                 <exclude reference="R87-u9-qbd"/>
                                 <exclude reference="aFI-Sx-ih2"/>
@@ -1656,9 +1665,6 @@ We implement security measures designed to protect your information from unautho
                                 <exclude reference="dWt-X4-Ghy"/>
                                 <exclude reference="NXI-bt-zdP"/>
                                 <exclude reference="mDO-ll-qOa"/>
-                                <exclude reference="0ea-pS-fWQ"/>
-                                <exclude reference="FpP-cT-tb4"/>
-                                <exclude reference="GRI-Ct-kje"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1669,6 +1675,9 @@ We implement security measures designed to protect your information from unautho
                                 <include reference="a4L-XP-98w"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="0ea-pS-fWQ"/>
+                                <include reference="FpP-cT-tb4"/>
+                                <include reference="GRI-Ct-kje"/>
                                 <include reference="8bP-De-eRq"/>
                                 <include reference="R87-u9-qbd"/>
                                 <include reference="aFI-Sx-ih2"/>
@@ -1677,9 +1686,6 @@ We implement security measures designed to protect your information from unautho
                                 <include reference="dWt-X4-Ghy"/>
                                 <include reference="NXI-bt-zdP"/>
                                 <include reference="mDO-ll-qOa"/>
-                                <include reference="0ea-pS-fWQ"/>
-                                <include reference="FpP-cT-tb4"/>
-                                <include reference="GRI-Ct-kje"/>
                             </mask>
                         </variation>
                     </view>
@@ -1724,14 +1730,14 @@ We implement security measures designed to protect your information from unautho
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="ue2-SJ-BoX"/>
                                                 <exclude reference="iYH-zc-wyE"/>
+                                                <exclude reference="ue2-SJ-BoX"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="ue2-SJ-BoX"/>
                                                 <include reference="iYH-zc-wyE"/>
+                                                <include reference="ue2-SJ-BoX"/>
                                             </mask>
                                         </variation>
                                     </label>
@@ -1846,10 +1852,10 @@ We implement security measures designed to protect your information from unautho
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="Na2-0W-Qtq"/>
-                                                <exclude reference="jIS-Ww-NdT"/>
-                                                <exclude reference="mgI-Om-Yb7"/>
-                                                <exclude reference="kQH-cd-zqw"/>
                                                 <exclude reference="19g-WM-BVf"/>
+                                                <exclude reference="jIS-Ww-NdT"/>
+                                                <exclude reference="kQH-cd-zqw"/>
+                                                <exclude reference="mgI-Om-Yb7"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -1858,10 +1864,10 @@ We implement security measures designed to protect your information from unautho
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="Na2-0W-Qtq"/>
-                                                <include reference="jIS-Ww-NdT"/>
-                                                <include reference="mgI-Om-Yb7"/>
-                                                <include reference="kQH-cd-zqw"/>
                                                 <include reference="19g-WM-BVf"/>
+                                                <include reference="jIS-Ww-NdT"/>
+                                                <include reference="kQH-cd-zqw"/>
+                                                <include reference="mgI-Om-Yb7"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -1882,14 +1888,14 @@ We implement security measures designed to protect your information from unautho
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="lpR-vL-PyY"/>
                                                 <exclude reference="9Rz-Au-Vvf"/>
+                                                <exclude reference="lpR-vL-PyY"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="lpR-vL-PyY"/>
                                                 <include reference="9Rz-Au-Vvf"/>
+                                                <include reference="lpR-vL-PyY"/>
                                             </mask>
                                         </variation>
                                     </label>
@@ -1978,14 +1984,14 @@ We implement security measures designed to protect your information from unautho
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="ReV-nQ-UDI"/>
                                                         <exclude reference="Kxv-Vo-p9r"/>
+                                                        <exclude reference="ReV-nQ-UDI"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
-                                                        <include reference="ReV-nQ-UDI"/>
                                                         <include reference="Kxv-Vo-p9r"/>
+                                                        <include reference="ReV-nQ-UDI"/>
                                                     </mask>
                                                 </variation>
                                             </label>
@@ -2110,52 +2116,52 @@ We implement security measures designed to protect your information from unautho
                                         <exclude reference="FgV-3y-Syj"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="xZE-3H-FA5"/>
+                                        <exclude reference="5uM-yL-YrP"/>
+                                        <exclude reference="9Kn-NG-aXp"/>
+                                        <exclude reference="qfH-N0-RAa"/>
+                                        <exclude reference="6Me-iN-g4E"/>
+                                        <exclude reference="8aN-xR-54m"/>
+                                        <exclude reference="Tf9-ur-zSN"/>
+                                        <exclude reference="1om-ph-eFm"/>
+                                        <exclude reference="JBS-hk-jjo"/>
+                                        <exclude reference="NaI-Fm-rfZ"/>
+                                        <exclude reference="pJ7-th-j3X"/>
+                                        <exclude reference="cyv-e3-JK5"/>
+                                        <exclude reference="tBs-w7-Adi"/>
+                                        <exclude reference="tq9-al-eyl"/>
+                                        <exclude reference="xB9-33-z32"/>
+                                        <exclude reference="xeH-O9-3wN"/>
+                                        <exclude reference="DDX-gO-wfw"/>
+                                        <exclude reference="YtF-AK-lK2"/>
+                                        <exclude reference="esO-Gu-afQ"/>
+                                        <exclude reference="0dz-sq-F33"/>
+                                        <exclude reference="W9x-X0-5fa"/>
+                                        <exclude reference="sxc-nN-VPc"/>
+                                        <exclude reference="8vm-9s-eyQ"/>
+                                        <exclude reference="kUo-I6-9aV"/>
+                                        <exclude reference="cUR-Dn-pw0"/>
+                                        <exclude reference="y29-eb-dKL"/>
+                                        <exclude reference="93M-8q-eus"/>
+                                        <exclude reference="vt6-uF-tsN"/>
+                                        <exclude reference="0jD-ap-eiL"/>
+                                        <exclude reference="KaJ-ZE-0ZV"/>
+                                        <exclude reference="jpp-qs-TKc"/>
+                                        <exclude reference="4hD-0a-cfH"/>
+                                        <exclude reference="Xv7-Zg-Uw6"/>
+                                        <exclude reference="gcG-Hs-al2"/>
+                                        <exclude reference="l4p-sL-Kqz"/>
+                                        <exclude reference="69g-dr-tgd"/>
+                                        <exclude reference="EAL-V4-zZt"/>
+                                        <exclude reference="zTI-Ry-qvp"/>
+                                        <exclude reference="2j5-Tc-MKT"/>
+                                        <exclude reference="zhn-aa-pUa"/>
                                         <exclude reference="M8b-Ca-QjU"/>
                                         <exclude reference="cOp-bf-WIL"/>
                                         <exclude reference="kYU-Og-JSX"/>
                                         <exclude reference="Mzg-FM-Hh9"/>
                                         <exclude reference="N6u-9B-il4"/>
                                         <exclude reference="vbk-dJ-WPh"/>
-                                        <exclude reference="69g-dr-tgd"/>
-                                        <exclude reference="EAL-V4-zZt"/>
-                                        <exclude reference="zTI-Ry-qvp"/>
-                                        <exclude reference="4hD-0a-cfH"/>
-                                        <exclude reference="Xv7-Zg-Uw6"/>
-                                        <exclude reference="sxc-nN-VPc"/>
-                                        <exclude reference="cyv-e3-JK5"/>
-                                        <exclude reference="tBs-w7-Adi"/>
-                                        <exclude reference="tq9-al-eyl"/>
-                                        <exclude reference="xB9-33-z32"/>
-                                        <exclude reference="xeH-O9-3wN"/>
-                                        <exclude reference="8vm-9s-eyQ"/>
-                                        <exclude reference="kUo-I6-9aV"/>
-                                        <exclude reference="DDX-gO-wfw"/>
-                                        <exclude reference="YtF-AK-lK2"/>
-                                        <exclude reference="esO-Gu-afQ"/>
-                                        <exclude reference="cUR-Dn-pw0"/>
-                                        <exclude reference="y29-eb-dKL"/>
-                                        <exclude reference="gcG-Hs-al2"/>
-                                        <exclude reference="l4p-sL-Kqz"/>
-                                        <exclude reference="1om-ph-eFm"/>
-                                        <exclude reference="JBS-hk-jjo"/>
-                                        <exclude reference="NaI-Fm-rfZ"/>
-                                        <exclude reference="pJ7-th-j3X"/>
-                                        <exclude reference="93M-8q-eus"/>
-                                        <exclude reference="vt6-uF-tsN"/>
-                                        <exclude reference="6Me-iN-g4E"/>
-                                        <exclude reference="8aN-xR-54m"/>
-                                        <exclude reference="Tf9-ur-zSN"/>
-                                        <exclude reference="xZE-3H-FA5"/>
-                                        <exclude reference="5uM-yL-YrP"/>
-                                        <exclude reference="9Kn-NG-aXp"/>
-                                        <exclude reference="qfH-N0-RAa"/>
-                                        <exclude reference="0jD-ap-eiL"/>
-                                        <exclude reference="KaJ-ZE-0ZV"/>
-                                        <exclude reference="jpp-qs-TKc"/>
-                                        <exclude reference="2j5-Tc-MKT"/>
-                                        <exclude reference="zhn-aa-pUa"/>
-                                        <exclude reference="0dz-sq-F33"/>
-                                        <exclude reference="W9x-X0-5fa"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -2180,52 +2186,52 @@ We implement security measures designed to protect your information from unautho
                                         <include reference="FgV-3y-Syj"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="xZE-3H-FA5"/>
+                                        <include reference="5uM-yL-YrP"/>
+                                        <include reference="9Kn-NG-aXp"/>
+                                        <include reference="qfH-N0-RAa"/>
+                                        <include reference="6Me-iN-g4E"/>
+                                        <include reference="8aN-xR-54m"/>
+                                        <include reference="Tf9-ur-zSN"/>
+                                        <include reference="1om-ph-eFm"/>
+                                        <include reference="JBS-hk-jjo"/>
+                                        <include reference="NaI-Fm-rfZ"/>
+                                        <include reference="pJ7-th-j3X"/>
+                                        <include reference="cyv-e3-JK5"/>
+                                        <include reference="tBs-w7-Adi"/>
+                                        <include reference="tq9-al-eyl"/>
+                                        <include reference="xB9-33-z32"/>
+                                        <include reference="xeH-O9-3wN"/>
+                                        <include reference="DDX-gO-wfw"/>
+                                        <include reference="YtF-AK-lK2"/>
+                                        <include reference="esO-Gu-afQ"/>
+                                        <include reference="0dz-sq-F33"/>
+                                        <include reference="W9x-X0-5fa"/>
+                                        <include reference="sxc-nN-VPc"/>
+                                        <include reference="8vm-9s-eyQ"/>
+                                        <include reference="kUo-I6-9aV"/>
+                                        <include reference="cUR-Dn-pw0"/>
+                                        <include reference="y29-eb-dKL"/>
+                                        <include reference="93M-8q-eus"/>
+                                        <include reference="vt6-uF-tsN"/>
+                                        <include reference="0jD-ap-eiL"/>
+                                        <include reference="KaJ-ZE-0ZV"/>
+                                        <include reference="jpp-qs-TKc"/>
+                                        <include reference="4hD-0a-cfH"/>
+                                        <include reference="Xv7-Zg-Uw6"/>
+                                        <include reference="gcG-Hs-al2"/>
+                                        <include reference="l4p-sL-Kqz"/>
+                                        <include reference="69g-dr-tgd"/>
+                                        <include reference="EAL-V4-zZt"/>
+                                        <include reference="zTI-Ry-qvp"/>
+                                        <include reference="2j5-Tc-MKT"/>
+                                        <include reference="zhn-aa-pUa"/>
                                         <include reference="M8b-Ca-QjU"/>
                                         <include reference="cOp-bf-WIL"/>
                                         <include reference="kYU-Og-JSX"/>
                                         <include reference="Mzg-FM-Hh9"/>
                                         <include reference="N6u-9B-il4"/>
                                         <include reference="vbk-dJ-WPh"/>
-                                        <include reference="69g-dr-tgd"/>
-                                        <include reference="EAL-V4-zZt"/>
-                                        <include reference="zTI-Ry-qvp"/>
-                                        <include reference="4hD-0a-cfH"/>
-                                        <include reference="Xv7-Zg-Uw6"/>
-                                        <include reference="sxc-nN-VPc"/>
-                                        <include reference="cyv-e3-JK5"/>
-                                        <include reference="tBs-w7-Adi"/>
-                                        <include reference="tq9-al-eyl"/>
-                                        <include reference="xB9-33-z32"/>
-                                        <include reference="xeH-O9-3wN"/>
-                                        <include reference="8vm-9s-eyQ"/>
-                                        <include reference="kUo-I6-9aV"/>
-                                        <include reference="DDX-gO-wfw"/>
-                                        <include reference="YtF-AK-lK2"/>
-                                        <include reference="esO-Gu-afQ"/>
-                                        <include reference="cUR-Dn-pw0"/>
-                                        <include reference="y29-eb-dKL"/>
-                                        <include reference="gcG-Hs-al2"/>
-                                        <include reference="l4p-sL-Kqz"/>
-                                        <include reference="1om-ph-eFm"/>
-                                        <include reference="JBS-hk-jjo"/>
-                                        <include reference="NaI-Fm-rfZ"/>
-                                        <include reference="pJ7-th-j3X"/>
-                                        <include reference="93M-8q-eus"/>
-                                        <include reference="vt6-uF-tsN"/>
-                                        <include reference="6Me-iN-g4E"/>
-                                        <include reference="8aN-xR-54m"/>
-                                        <include reference="Tf9-ur-zSN"/>
-                                        <include reference="xZE-3H-FA5"/>
-                                        <include reference="5uM-yL-YrP"/>
-                                        <include reference="9Kn-NG-aXp"/>
-                                        <include reference="qfH-N0-RAa"/>
-                                        <include reference="0jD-ap-eiL"/>
-                                        <include reference="KaJ-ZE-0ZV"/>
-                                        <include reference="jpp-qs-TKc"/>
-                                        <include reference="2j5-Tc-MKT"/>
-                                        <include reference="zhn-aa-pUa"/>
-                                        <include reference="0dz-sq-F33"/>
-                                        <include reference="W9x-X0-5fa"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -3078,10 +3084,16 @@ We implement security measures designed to protect your information from unautho
                                                 <constraint firstItem="yn5-jV-TBj" firstAttribute="top" secondItem="lih-uF-PEy" secondAttribute="top" constant="20" id="Uqg-OO-1hR"/>
                                                 <constraint firstItem="yn5-jV-TBj" firstAttribute="leading" secondItem="lih-uF-PEy" secondAttribute="leading" constant="8" id="WH7-ni-MGo"/>
                                                 <constraint firstAttribute="bottom" secondItem="Nh3-88-d9O" secondAttribute="bottom" id="XVr-KW-6K8"/>
-                                                <constraint firstItem="A92-Uq-EyU" firstAttribute="centerX" secondItem="4eN-Mm-oqc" secondAttribute="centerX" id="ZHm-TQ-ytE"/>
+                                                <constraint firstItem="A92-Uq-EyU" firstAttribute="centerX" secondItem="4eN-Mm-oqc" secondAttribute="centerX" id="ZHm-TQ-ytE">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="1.5"/>
+                                                </constraint>
                                                 <constraint firstItem="Irw-dE-FI0" firstAttribute="baseline" secondItem="aT0-Yh-CfR" secondAttribute="baseline" id="akr-3E-Hnc"/>
-                                                <constraint firstItem="4eN-Mm-oqc" firstAttribute="centerX" secondItem="Nh3-88-d9O" secondAttribute="centerX" id="cFY-HG-gFQ"/>
-                                                <constraint firstItem="4eN-Mm-oqc" firstAttribute="centerY" secondItem="Nh3-88-d9O" secondAttribute="centerY" id="fLk-Bh-NLv"/>
+                                                <constraint firstItem="4eN-Mm-oqc" firstAttribute="centerX" secondItem="Nh3-88-d9O" secondAttribute="centerX" id="cFY-HG-gFQ">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="-1.5"/>
+                                                </constraint>
+                                                <constraint firstItem="4eN-Mm-oqc" firstAttribute="centerY" secondItem="Nh3-88-d9O" secondAttribute="centerY" id="fLk-Bh-NLv">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="-1.5"/>
+                                                </constraint>
                                                 <constraint firstItem="mPX-NE-Fay" firstAttribute="baseline" secondItem="fJd-rG-f8c" secondAttribute="baseline" id="hhl-9U-rNH"/>
                                                 <constraint firstItem="4eN-Mm-oqc" firstAttribute="leading" secondItem="rcR-RS-cG0" secondAttribute="trailing" constant="8" id="jdR-Pc-9Sj"/>
                                                 <constraint firstAttribute="trailing" secondItem="Tx2-0V-9Jo" secondAttribute="trailing" id="jjS-Yt-Z9k"/>
@@ -3720,14 +3732,14 @@ We implement security measures designed to protect your information from unautho
                                                                         <nil key="highlightedColor"/>
                                                                         <variation key="default">
                                                                             <mask key="constraints">
-                                                                                <exclude reference="muo-Wx-kAk"/>
                                                                                 <exclude reference="UWQ-LC-Bp5"/>
+                                                                                <exclude reference="muo-Wx-kAk"/>
                                                                             </mask>
                                                                         </variation>
                                                                         <variation key="heightClass=regular-widthClass=compact">
                                                                             <mask key="constraints">
-                                                                                <include reference="muo-Wx-kAk"/>
                                                                                 <include reference="UWQ-LC-Bp5"/>
+                                                                                <include reference="muo-Wx-kAk"/>
                                                                             </mask>
                                                                         </variation>
                                                                     </label>
@@ -4547,14 +4559,14 @@ We implement security measures designed to protect your information from unautho
                                                                                 <nil key="highlightedColor"/>
                                                                                 <variation key="default">
                                                                                     <mask key="constraints">
-                                                                                        <exclude reference="ZbC-xy-UQw"/>
                                                                                         <exclude reference="FIn-uh-qcL"/>
+                                                                                        <exclude reference="ZbC-xy-UQw"/>
                                                                                     </mask>
                                                                                 </variation>
                                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                                     <mask key="constraints">
-                                                                                        <include reference="ZbC-xy-UQw"/>
                                                                                         <include reference="FIn-uh-qcL"/>
+                                                                                        <include reference="ZbC-xy-UQw"/>
                                                                                     </mask>
                                                                                 </variation>
                                                                             </label>
@@ -5347,14 +5359,14 @@ We implement security measures designed to protect your information from unautho
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
-                                                                <exclude reference="onU-Ut-drn"/>
                                                                 <exclude reference="1lQ-K4-A1G"/>
+                                                                <exclude reference="onU-Ut-drn"/>
                                                             </mask>
                                                         </variation>
                                                         <variation key="heightClass=regular-widthClass=compact">
                                                             <mask key="constraints">
-                                                                <include reference="onU-Ut-drn"/>
                                                                 <include reference="1lQ-K4-A1G"/>
+                                                                <include reference="onU-Ut-drn"/>
                                                             </mask>
                                                         </variation>
                                                     </label>
@@ -6080,14 +6092,14 @@ We implement security measures designed to protect your information from unautho
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="zxw-AV-U0L"/>
                                                         <exclude reference="NVJ-gj-Hy5"/>
+                                                        <exclude reference="zxw-AV-U0L"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
-                                                        <include reference="zxw-AV-U0L"/>
                                                         <include reference="NVJ-gj-Hy5"/>
+                                                        <include reference="zxw-AV-U0L"/>
                                                     </mask>
                                                 </variation>
                                             </label>
@@ -7560,14 +7572,14 @@ We implement security measures designed to protect your information from unautho
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="aRZ-eV-QLr"/>
                                                         <exclude reference="CXW-ni-FkI"/>
+                                                        <exclude reference="aRZ-eV-QLr"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
-                                                        <include reference="aRZ-eV-QLr"/>
                                                         <include reference="CXW-ni-FkI"/>
+                                                        <include reference="aRZ-eV-QLr"/>
                                                     </mask>
                                                 </variation>
                                             </label>
@@ -7984,14 +7996,14 @@ We implement security measures designed to protect your information from unautho
                                                                 <nil key="highlightedColor"/>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="bae-al-HUW"/>
                                                                         <exclude reference="NvD-Dn-U3d"/>
+                                                                        <exclude reference="bae-al-HUW"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                     <mask key="constraints">
-                                                                        <include reference="bae-al-HUW"/>
                                                                         <include reference="NvD-Dn-U3d"/>
+                                                                        <include reference="bae-al-HUW"/>
                                                                     </mask>
                                                                 </variation>
                                                             </label>
@@ -8664,51 +8676,37 @@ We implement security measures designed to protect your information from unautho
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-pK-dLi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text_fripple_preview" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-pK-dLi">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your own text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8di-eg-3D9">
-                                <rect key="frame" x="146" y="357" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ye5-pK-dLi" secondAttribute="trailing" id="0Uk-7C-jl6"/>
-                            <constraint firstItem="8di-eg-3D9" firstAttribute="centerY" secondItem="DVX-oH-obe" secondAttribute="centerY" id="Ld2-HR-XbU"/>
                             <constraint firstItem="Da9-35-R6L" firstAttribute="top" secondItem="ye5-pK-dLi" secondAttribute="bottom" id="cvE-1r-rNI"/>
                             <constraint firstItem="ye5-pK-dLi" firstAttribute="top" secondItem="DVX-oH-obe" secondAttribute="top" id="kjD-zD-Sd3"/>
                             <constraint firstItem="ye5-pK-dLi" firstAttribute="leading" secondItem="DVX-oH-obe" secondAttribute="leading" id="olu-rf-pOK"/>
-                            <constraint firstItem="8di-eg-3D9" firstAttribute="centerX" secondItem="DVX-oH-obe" secondAttribute="centerX" id="xfR-NY-bYX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ye5-pK-dLi"/>
-                                <exclude reference="8di-eg-3D9"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="cvE-1r-rNI"/>
                                 <exclude reference="0Uk-7C-jl6"/>
                                 <exclude reference="kjD-zD-Sd3"/>
                                 <exclude reference="olu-rf-pOK"/>
-                                <exclude reference="Ld2-HR-XbU"/>
-                                <exclude reference="xfR-NY-bYX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ye5-pK-dLi"/>
-                                <include reference="8di-eg-3D9"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="cvE-1r-rNI"/>
                                 <include reference="0Uk-7C-jl6"/>
                                 <include reference="kjD-zD-Sd3"/>
                                 <include reference="olu-rf-pOK"/>
-                                <include reference="Ld2-HR-XbU"/>
-                                <include reference="xfR-NY-bYX"/>
                             </mask>
                         </variation>
                     </view>
@@ -8730,51 +8728,37 @@ We implement security measures designed to protect your information from unautho
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="x32-LR-m1t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_fripple_preview" translatesAutoresizingMaskIntoConstraints="NO" id="x32-LR-m1t">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use precanned options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYo-Fd-hRA">
-                                <rect key="frame" x="146" y="357" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x32-LR-m1t" firstAttribute="top" secondItem="ABE-sl-LXR" secondAttribute="top" id="04X-mH-pPG"/>
                             <constraint firstItem="W8V-jU-nH2" firstAttribute="top" secondItem="x32-LR-m1t" secondAttribute="bottom" id="0qL-oa-gSJ"/>
                             <constraint firstAttribute="trailing" secondItem="x32-LR-m1t" secondAttribute="trailing" id="5Yz-dp-3Qg"/>
-                            <constraint firstItem="BYo-Fd-hRA" firstAttribute="centerY" secondItem="ABE-sl-LXR" secondAttribute="centerY" id="Dbp-zx-KuE"/>
-                            <constraint firstItem="BYo-Fd-hRA" firstAttribute="centerX" secondItem="ABE-sl-LXR" secondAttribute="centerX" id="o99-9j-HFU"/>
                             <constraint firstItem="x32-LR-m1t" firstAttribute="leading" secondItem="ABE-sl-LXR" secondAttribute="leading" id="xFj-9W-Oua"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="x32-LR-m1t"/>
-                                <exclude reference="BYo-Fd-hRA"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0qL-oa-gSJ"/>
                                 <exclude reference="04X-mH-pPG"/>
                                 <exclude reference="5Yz-dp-3Qg"/>
                                 <exclude reference="xFj-9W-Oua"/>
-                                <exclude reference="Dbp-zx-KuE"/>
-                                <exclude reference="o99-9j-HFU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="x32-LR-m1t"/>
-                                <include reference="BYo-Fd-hRA"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0qL-oa-gSJ"/>
                                 <include reference="04X-mH-pPG"/>
                                 <include reference="5Yz-dp-3Qg"/>
                                 <include reference="xFj-9W-Oua"/>
-                                <include reference="Dbp-zx-KuE"/>
-                                <include reference="o99-9j-HFU"/>
                             </mask>
                         </variation>
                     </view>
@@ -8796,51 +8780,37 @@ We implement security measures designed to protect your information from unautho
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="cyg-HT-zB1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Precanned_Fripple_preview" translatesAutoresizingMaskIntoConstraints="NO" id="cyg-HT-zB1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create image question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8t-M9-qwf">
-                                <rect key="frame" x="146" y="357" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="a8t-M9-qwf" firstAttribute="centerX" secondItem="dEn-I1-tow" secondAttribute="centerX" id="QMf-Zs-GEV"/>
                             <constraint firstItem="cyg-HT-zB1" firstAttribute="leading" secondItem="dEn-I1-tow" secondAttribute="leading" id="TvR-RL-PC6"/>
                             <constraint firstAttribute="trailing" secondItem="cyg-HT-zB1" secondAttribute="trailing" id="fjk-mJ-BNT"/>
-                            <constraint firstItem="a8t-M9-qwf" firstAttribute="centerY" secondItem="dEn-I1-tow" secondAttribute="centerY" id="o7i-NH-laU"/>
                             <constraint firstItem="gt2-46-cSZ" firstAttribute="top" secondItem="cyg-HT-zB1" secondAttribute="bottom" id="wbu-89-95e"/>
                             <constraint firstItem="cyg-HT-zB1" firstAttribute="top" secondItem="dEn-I1-tow" secondAttribute="top" id="x1H-8j-2cv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="cyg-HT-zB1"/>
-                                <exclude reference="a8t-M9-qwf"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="wbu-89-95e"/>
                                 <exclude reference="TvR-RL-PC6"/>
                                 <exclude reference="fjk-mJ-BNT"/>
                                 <exclude reference="x1H-8j-2cv"/>
-                                <exclude reference="QMf-Zs-GEV"/>
-                                <exclude reference="o7i-NH-laU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="cyg-HT-zB1"/>
-                                <include reference="a8t-M9-qwf"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="wbu-89-95e"/>
                                 <include reference="TvR-RL-PC6"/>
                                 <include reference="fjk-mJ-BNT"/>
                                 <include reference="x1H-8j-2cv"/>
-                                <include reference="QMf-Zs-GEV"/>
-                                <include reference="o7i-NH-laU"/>
                             </mask>
                         </variation>
                     </view>
@@ -8862,51 +8832,37 @@ We implement security measures designed to protect your information from unautho
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="hXM-ge-C5C">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Results_preview" translatesAutoresizingMaskIntoConstraints="NO" id="hXM-ge-C5C">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qG1-04-IS7">
-                                <rect key="frame" x="146" y="357" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hQN-ic-yC0" firstAttribute="top" secondItem="hXM-ge-C5C" secondAttribute="bottom" id="AkJ-gA-XNV"/>
-                            <constraint firstItem="qG1-04-IS7" firstAttribute="centerX" secondItem="kFh-lu-Sao" secondAttribute="centerX" id="MM8-su-Rl1"/>
                             <constraint firstAttribute="trailing" secondItem="hXM-ge-C5C" secondAttribute="trailing" id="NbB-aw-orO"/>
-                            <constraint firstItem="qG1-04-IS7" firstAttribute="centerY" secondItem="kFh-lu-Sao" secondAttribute="centerY" id="PrV-5q-tzS"/>
                             <constraint firstItem="hXM-ge-C5C" firstAttribute="top" secondItem="kFh-lu-Sao" secondAttribute="top" id="pXJ-Hc-UAa"/>
                             <constraint firstItem="hXM-ge-C5C" firstAttribute="leading" secondItem="kFh-lu-Sao" secondAttribute="leading" id="uen-2b-X1v"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hXM-ge-C5C"/>
-                                <exclude reference="qG1-04-IS7"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="AkJ-gA-XNV"/>
                                 <exclude reference="NbB-aw-orO"/>
                                 <exclude reference="pXJ-Hc-UAa"/>
                                 <exclude reference="uen-2b-X1v"/>
-                                <exclude reference="MM8-su-Rl1"/>
-                                <exclude reference="PrV-5q-tzS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="hXM-ge-C5C"/>
-                                <include reference="qG1-04-IS7"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="AkJ-gA-XNV"/>
                                 <include reference="NbB-aw-orO"/>
                                 <include reference="pXJ-Hc-UAa"/>
                                 <include reference="uen-2b-X1v"/>
-                                <include reference="MM8-su-Rl1"/>
-                                <include reference="PrV-5q-tzS"/>
                             </mask>
                         </variation>
                     </view>
@@ -8915,6 +8871,155 @@ We implement security measures designed to protect your information from unautho
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDf-RM-hjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="637.5" y="994.5"/>
+        </scene>
+        <!--Comments Preview View Controller-->
+        <scene sceneID="QIJ-E2-SkA">
+            <objects>
+                <viewController storyboardIdentifier="CommentsPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmt-dD-Zh0" customClass="CommentsPreviewViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6lU-Js-nXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="naw-V8-EuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ylo-J5-3Nj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comments_preview" translatesAutoresizingMaskIntoConstraints="NO" id="w0k-WS-qsg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-6Z-3rM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.82352941180000006" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="SI5-xC-hg2"/>
+                                    <constraint firstAttribute="width" constant="149" id="rfo-KP-XIl">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <state key="normal">
+                                    <string key="title">OK 
+GET STARTED!</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SI5-xC-hg2"/>
+                                        <exclude reference="rfo-KP-XIl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SI5-xC-hg2"/>
+                                        <include reference="rfo-KP-XIl"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Tmt-dD-Zh0" eventType="touchUpInside" id="T2y-Zn-3yM"/>
+                                    <action selector="recoverButtonTapped:" destination="nCs-uF-wCk" eventType="touchUpInside" id="Yrf-AN-2aw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NoH-6Z-3rM" firstAttribute="centerX" secondItem="ylo-J5-3Nj" secondAttribute="centerX" id="Axb-Bi-Skt">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="w0k-WS-qsg" secondAttribute="trailing" id="Hze-Mo-iaQ"/>
+                            <constraint firstItem="naw-V8-EuU" firstAttribute="top" secondItem="w0k-WS-qsg" secondAttribute="bottom" id="n1p-UM-FQN"/>
+                            <constraint firstItem="w0k-WS-qsg" firstAttribute="leading" secondItem="ylo-J5-3Nj" secondAttribute="leading" id="nMR-a4-q2e"/>
+                            <constraint firstItem="NoH-6Z-3rM" firstAttribute="bottom" secondItem="w0k-WS-qsg" secondAttribute="bottom" multiplier="0.66" id="ubQ-Ze-HRD"/>
+                            <constraint firstItem="w0k-WS-qsg" firstAttribute="top" secondItem="ylo-J5-3Nj" secondAttribute="top" id="vcC-Cc-tSO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="w0k-WS-qsg"/>
+                                <exclude reference="NoH-6Z-3rM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Hze-Mo-iaQ"/>
+                                <exclude reference="nMR-a4-q2e"/>
+                                <exclude reference="vcC-Cc-tSO"/>
+                                <exclude reference="Axb-Bi-Skt"/>
+                                <exclude reference="ubQ-Ze-HRD"/>
+                                <exclude reference="n1p-UM-FQN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="w0k-WS-qsg"/>
+                                <include reference="NoH-6Z-3rM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Hze-Mo-iaQ"/>
+                                <include reference="nMR-a4-q2e"/>
+                                <include reference="vcC-Cc-tSO"/>
+                                <include reference="Axb-Bi-Skt"/>
+                                <include reference="ubQ-Ze-HRD"/>
+                                <include reference="n1p-UM-FQN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="NoH-6Z-3rM" id="ib4-lm-Ts0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecr-CJ-xVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.5" y="1656.75"/>
+        </scene>
+        <!--Command Central Preview View Controller-->
+        <scene sceneID="Us2-B1-4UJ">
+            <objects>
+                <viewController storyboardIdentifier="CommandCentralPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t7v-iS-GE6" customClass="CommandCentralPreviewViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ys-yq-Jva"/>
+                        <viewControllerLayoutGuide type="bottom" id="9jX-Qc-245"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0YA-Gb-LwO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Command_central_preview" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-Ug-dOq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dsw-Ug-dOq" firstAttribute="leading" secondItem="0YA-Gb-LwO" secondAttribute="leading" id="2Mc-CY-9Dp"/>
+                            <constraint firstItem="Dsw-Ug-dOq" firstAttribute="top" secondItem="0YA-Gb-LwO" secondAttribute="top" id="CTf-Iq-ZqX"/>
+                            <constraint firstItem="9jX-Qc-245" firstAttribute="top" secondItem="Dsw-Ug-dOq" secondAttribute="bottom" id="JIw-Lp-P3g"/>
+                            <constraint firstAttribute="trailing" secondItem="Dsw-Ug-dOq" secondAttribute="trailing" id="uo4-jX-AWV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Dsw-Ug-dOq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JIw-Lp-P3g"/>
+                                <exclude reference="2Mc-CY-9Dp"/>
+                                <exclude reference="CTf-Iq-ZqX"/>
+                                <exclude reference="uo4-jX-AWV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Dsw-Ug-dOq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JIw-Lp-P3g"/>
+                                <include reference="2Mc-CY-9Dp"/>
+                                <include reference="CTf-Iq-ZqX"/>
+                                <include reference="uo4-jX-AWV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRQ-nJ-Zbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2130" y="994.5"/>
         </scene>
         <!--Sent View Controller-->
         <scene sceneID="gt4-5g-BBR">
@@ -9146,7 +9251,7 @@ We implement security measures designed to protect your information from unautho
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Results_image" translatesAutoresizingMaskIntoConstraints="NO" id="JB5-7q-YXx">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JB5-7q-YXx">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 </imageView>
                                             </subviews>
@@ -10244,7 +10349,8 @@ We implement security measures designed to protect your information from unautho
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-ey-i5l">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                <state key="normal" image="Updated_clear"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                <state key="normal" title="Clear"/>
                                                 <connections>
                                                     <action selector="clear:" destination="t3J-Mr-BSI" eventType="touchUpInside" id="Kjz-KV-dkq"/>
                                                 </connections>
@@ -10279,7 +10385,7 @@ We implement security measures designed to protect your information from unautho
                                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
                                             </constraint>
                                             <constraint firstItem="oiH-ey-i5l" firstAttribute="leading" secondItem="0E8-wO-45O" secondAttribute="centerX" multiplier="1.8" id="P8D-ZD-YaW">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="-8"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
                                             </constraint>
                                             <constraint firstItem="9KN-UE-62c" firstAttribute="leading" secondItem="0E8-wO-45O" secondAttribute="leading" constant="8" id="SPO-4e-Kxw"/>
                                             <constraint firstAttribute="bottom" secondItem="oiH-ey-i5l" secondAttribute="bottom" constant="5" id="ccV-3W-WoJ"/>
@@ -10680,24 +10786,6 @@ We implement security measures designed to protect your information from unautho
                                         <exclude reference="aOg-3x-mrK"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="bqF-U0-vr9"/>
-                                        <exclude reference="vFf-8N-jFF"/>
-                                        <exclude reference="zZg-Fu-o1l"/>
-                                        <exclude reference="8uV-xH-dAJ"/>
-                                        <exclude reference="NGn-EZ-qsW"/>
-                                        <exclude reference="ubn-9c-VOT"/>
-                                        <exclude reference="cL3-Tv-VdR"/>
-                                        <exclude reference="fQu-Ny-VfO"/>
-                                        <exclude reference="abL-lE-0lS"/>
-                                        <exclude reference="lWW-IC-oAG"/>
-                                        <exclude reference="ptf-uC-P7F"/>
-                                        <exclude reference="0ba-XN-1F5"/>
-                                        <exclude reference="II4-Zz-zYW"/>
-                                        <exclude reference="OUk-Tl-3zr"/>
-                                        <exclude reference="qZu-e5-0D6"/>
-                                        <exclude reference="FMq-Cd-MBs"/>
-                                        <exclude reference="cA5-Kz-TTz"/>
-                                        <exclude reference="j3A-2U-jeg"/>
                                         <exclude reference="had-9E-0Dy"/>
                                         <exclude reference="tv6-tP-7js"/>
                                         <exclude reference="GuJ-Rf-6Xm"/>
@@ -10707,6 +10795,10 @@ We implement security measures designed to protect your information from unautho
                                         <exclude reference="BcJ-8j-Dfv"/>
                                         <exclude reference="mW9-pS-8Av"/>
                                         <exclude reference="mYL-lw-dhk"/>
+                                        <exclude reference="OAj-Ou-eE0"/>
+                                        <exclude reference="QIz-R7-a3f"/>
+                                        <exclude reference="g9u-js-0CE"/>
+                                        <exclude reference="mEN-H4-CIE"/>
                                         <exclude reference="7Cl-cA-0LQ"/>
                                         <exclude reference="RRp-7r-qHn"/>
                                         <exclude reference="TlO-hD-PHQ"/>
@@ -10714,10 +10806,24 @@ We implement security measures designed to protect your information from unautho
                                         <exclude reference="mjE-kx-mFP"/>
                                         <exclude reference="EzA-JQ-25B"/>
                                         <exclude reference="NQm-vI-tef"/>
-                                        <exclude reference="OAj-Ou-eE0"/>
-                                        <exclude reference="QIz-R7-a3f"/>
-                                        <exclude reference="g9u-js-0CE"/>
-                                        <exclude reference="mEN-H4-CIE"/>
+                                        <exclude reference="cL3-Tv-VdR"/>
+                                        <exclude reference="fQu-Ny-VfO"/>
+                                        <exclude reference="bqF-U0-vr9"/>
+                                        <exclude reference="vFf-8N-jFF"/>
+                                        <exclude reference="zZg-Fu-o1l"/>
+                                        <exclude reference="8uV-xH-dAJ"/>
+                                        <exclude reference="NGn-EZ-qsW"/>
+                                        <exclude reference="ubn-9c-VOT"/>
+                                        <exclude reference="FMq-Cd-MBs"/>
+                                        <exclude reference="cA5-Kz-TTz"/>
+                                        <exclude reference="j3A-2U-jeg"/>
+                                        <exclude reference="abL-lE-0lS"/>
+                                        <exclude reference="lWW-IC-oAG"/>
+                                        <exclude reference="ptf-uC-P7F"/>
+                                        <exclude reference="0ba-XN-1F5"/>
+                                        <exclude reference="II4-Zz-zYW"/>
+                                        <exclude reference="OUk-Tl-3zr"/>
+                                        <exclude reference="qZu-e5-0D6"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -10737,24 +10843,6 @@ We implement security measures designed to protect your information from unautho
                                         <include reference="aOg-3x-mrK"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="bqF-U0-vr9"/>
-                                        <include reference="vFf-8N-jFF"/>
-                                        <include reference="zZg-Fu-o1l"/>
-                                        <include reference="8uV-xH-dAJ"/>
-                                        <include reference="NGn-EZ-qsW"/>
-                                        <include reference="ubn-9c-VOT"/>
-                                        <include reference="cL3-Tv-VdR"/>
-                                        <include reference="fQu-Ny-VfO"/>
-                                        <include reference="abL-lE-0lS"/>
-                                        <include reference="lWW-IC-oAG"/>
-                                        <include reference="ptf-uC-P7F"/>
-                                        <include reference="0ba-XN-1F5"/>
-                                        <include reference="II4-Zz-zYW"/>
-                                        <include reference="OUk-Tl-3zr"/>
-                                        <include reference="qZu-e5-0D6"/>
-                                        <include reference="FMq-Cd-MBs"/>
-                                        <include reference="cA5-Kz-TTz"/>
-                                        <include reference="j3A-2U-jeg"/>
                                         <include reference="had-9E-0Dy"/>
                                         <include reference="tv6-tP-7js"/>
                                         <include reference="GuJ-Rf-6Xm"/>
@@ -10764,6 +10852,10 @@ We implement security measures designed to protect your information from unautho
                                         <include reference="BcJ-8j-Dfv"/>
                                         <include reference="mW9-pS-8Av"/>
                                         <include reference="mYL-lw-dhk"/>
+                                        <include reference="OAj-Ou-eE0"/>
+                                        <include reference="QIz-R7-a3f"/>
+                                        <include reference="g9u-js-0CE"/>
+                                        <include reference="mEN-H4-CIE"/>
                                         <include reference="7Cl-cA-0LQ"/>
                                         <include reference="RRp-7r-qHn"/>
                                         <include reference="TlO-hD-PHQ"/>
@@ -10771,10 +10863,24 @@ We implement security measures designed to protect your information from unautho
                                         <include reference="mjE-kx-mFP"/>
                                         <include reference="EzA-JQ-25B"/>
                                         <include reference="NQm-vI-tef"/>
-                                        <include reference="OAj-Ou-eE0"/>
-                                        <include reference="QIz-R7-a3f"/>
-                                        <include reference="g9u-js-0CE"/>
-                                        <include reference="mEN-H4-CIE"/>
+                                        <include reference="cL3-Tv-VdR"/>
+                                        <include reference="fQu-Ny-VfO"/>
+                                        <include reference="bqF-U0-vr9"/>
+                                        <include reference="vFf-8N-jFF"/>
+                                        <include reference="zZg-Fu-o1l"/>
+                                        <include reference="8uV-xH-dAJ"/>
+                                        <include reference="NGn-EZ-qsW"/>
+                                        <include reference="ubn-9c-VOT"/>
+                                        <include reference="FMq-Cd-MBs"/>
+                                        <include reference="cA5-Kz-TTz"/>
+                                        <include reference="j3A-2U-jeg"/>
+                                        <include reference="abL-lE-0lS"/>
+                                        <include reference="lWW-IC-oAG"/>
+                                        <include reference="ptf-uC-P7F"/>
+                                        <include reference="0ba-XN-1F5"/>
+                                        <include reference="II4-Zz-zYW"/>
+                                        <include reference="OUk-Tl-3zr"/>
+                                        <include reference="qZu-e5-0D6"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -10820,6 +10926,7 @@ We implement security measures designed to protect your information from unautho
                         <outlet property="answer3Text" destination="jUu-uN-6dN" id="zUk-T5-Qh3"/>
                         <outlet property="answer4Text" destination="CGK-qi-EEm" id="ITa-18-4Iw"/>
                         <outlet property="answersContainer" destination="aOg-3x-mrK" id="3mD-XD-FDR"/>
+                        <outlet property="closeButton" destination="oiH-ey-i5l" id="Nl7-vJ-naz"/>
                         <outlet property="constraint" destination="abL-lE-0lS" id="Zkm-pj-ZUo"/>
                         <outlet property="mainImage" destination="KOf-tg-TrH" id="79g-zT-JHU"/>
                         <outlet property="numberOfContacts" destination="Pnf-KL-f7v" id="jQG-SQ-QUk"/>
@@ -10990,7 +11097,8 @@ We implement security measures designed to protect your information from unautho
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc1-f5-2mx">
                                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                        <state key="normal" image="Updated_clear"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                        <state key="normal" title="Clear"/>
                                                         <connections>
                                                             <action selector="clear:" destination="nkO-K8-L1X" eventType="touchUpInside" id="bUA-we-deb"/>
                                                         </connections>
@@ -11029,7 +11137,7 @@ We implement security measures designed to protect your information from unautho
                                                     <constraint firstItem="yzR-gc-g7H" firstAttribute="centerY" secondItem="gc1-f5-2mx" secondAttribute="centerY" id="UOL-19-J4P"/>
                                                     <constraint firstAttribute="bottom" secondItem="gc1-f5-2mx" secondAttribute="bottom" constant="5" id="Ywe-Br-QWc"/>
                                                     <constraint firstItem="gc1-f5-2mx" firstAttribute="leading" secondItem="skb-5H-ea3" secondAttribute="centerX" multiplier="1.8" id="ZpN-GX-7bC">
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="-8"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
                                                     </constraint>
                                                     <constraint firstItem="h2k-fd-f7Y" firstAttribute="leading" secondItem="skb-5H-ea3" secondAttribute="leading" constant="8" id="etk-So-SWZ"/>
                                                     <constraint firstAttribute="trailing" secondItem="gc1-f5-2mx" secondAttribute="trailing" constant="8" id="qRg-wc-2hx">
@@ -11111,14 +11219,14 @@ We implement security measures designed to protect your information from unautho
                                                                 <nil key="highlightedColor"/>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="M0E-J6-6Oc"/>
                                                                         <exclude reference="Kkv-vF-9q2"/>
+                                                                        <exclude reference="M0E-J6-6Oc"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                     <mask key="constraints">
-                                                                        <include reference="M0E-J6-6Oc"/>
                                                                         <include reference="Kkv-vF-9q2"/>
+                                                                        <include reference="M0E-J6-6Oc"/>
                                                                     </mask>
                                                                 </variation>
                                                             </label>
@@ -11354,14 +11462,26 @@ We implement security measures designed to protect your information from unautho
                                                 <exclude reference="VE5-xA-8qD"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="7bm-MX-jtD"/>
-                                                <exclude reference="hjX-58-OgI"/>
-                                                <exclude reference="p7W-EP-Fcf"/>
-                                                <exclude reference="COA-xL-L2X"/>
-                                                <exclude reference="XdG-M8-Wds"/>
-                                                <exclude reference="drd-ga-IIY"/>
+                                                <exclude reference="1Em-D7-Aul"/>
+                                                <exclude reference="kw6-UY-fkH"/>
+                                                <exclude reference="uib-bg-eHe"/>
+                                                <exclude reference="TC8-As-K1i"/>
+                                                <exclude reference="s7m-XK-mdQ"/>
+                                                <exclude reference="swd-78-Ybs"/>
+                                                <exclude reference="5LV-yW-9z3"/>
+                                                <exclude reference="X0j-VA-HdR"/>
+                                                <exclude reference="Bol-lf-1qU"/>
+                                                <exclude reference="Vw3-HR-s1m"/>
+                                                <exclude reference="apZ-2T-ClK"/>
+                                                <exclude reference="hpr-Ly-bfH"/>
+                                                <exclude reference="2Pw-WG-ifd"/>
+                                                <exclude reference="D4i-Wm-sjA"/>
+                                                <exclude reference="Pc4-1n-BxT"/>
+                                                <exclude reference="g2s-69-0f5"/>
                                                 <exclude reference="dnR-ME-FKx"/>
                                                 <exclude reference="euX-2E-DmT"/>
+                                                <exclude reference="IXk-g3-YTg"/>
+                                                <exclude reference="r8n-ka-1bn"/>
                                                 <exclude reference="N7u-Bs-MtD"/>
                                                 <exclude reference="V3G-97-aMt"/>
                                                 <exclude reference="q72-F7-jg9"/>
@@ -11370,24 +11490,12 @@ We implement security measures designed to protect your information from unautho
                                                 <exclude reference="XSK-Tv-yVl"/>
                                                 <exclude reference="Zfj-js-5Ty"/>
                                                 <exclude reference="sip-PJ-h5a"/>
-                                                <exclude reference="5LV-yW-9z3"/>
-                                                <exclude reference="X0j-VA-HdR"/>
-                                                <exclude reference="2Pw-WG-ifd"/>
-                                                <exclude reference="D4i-Wm-sjA"/>
-                                                <exclude reference="Pc4-1n-BxT"/>
-                                                <exclude reference="g2s-69-0f5"/>
-                                                <exclude reference="TC8-As-K1i"/>
-                                                <exclude reference="s7m-XK-mdQ"/>
-                                                <exclude reference="swd-78-Ybs"/>
-                                                <exclude reference="1Em-D7-Aul"/>
-                                                <exclude reference="kw6-UY-fkH"/>
-                                                <exclude reference="uib-bg-eHe"/>
-                                                <exclude reference="IXk-g3-YTg"/>
-                                                <exclude reference="r8n-ka-1bn"/>
-                                                <exclude reference="Bol-lf-1qU"/>
-                                                <exclude reference="Vw3-HR-s1m"/>
-                                                <exclude reference="apZ-2T-ClK"/>
-                                                <exclude reference="hpr-Ly-bfH"/>
+                                                <exclude reference="COA-xL-L2X"/>
+                                                <exclude reference="XdG-M8-Wds"/>
+                                                <exclude reference="drd-ga-IIY"/>
+                                                <exclude reference="7bm-MX-jtD"/>
+                                                <exclude reference="hjX-58-OgI"/>
+                                                <exclude reference="p7W-EP-Fcf"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -11405,14 +11513,26 @@ We implement security measures designed to protect your information from unautho
                                                 <include reference="VE5-xA-8qD"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="7bm-MX-jtD"/>
-                                                <include reference="hjX-58-OgI"/>
-                                                <include reference="p7W-EP-Fcf"/>
-                                                <include reference="COA-xL-L2X"/>
-                                                <include reference="XdG-M8-Wds"/>
-                                                <include reference="drd-ga-IIY"/>
+                                                <include reference="1Em-D7-Aul"/>
+                                                <include reference="kw6-UY-fkH"/>
+                                                <include reference="uib-bg-eHe"/>
+                                                <include reference="TC8-As-K1i"/>
+                                                <include reference="s7m-XK-mdQ"/>
+                                                <include reference="swd-78-Ybs"/>
+                                                <include reference="5LV-yW-9z3"/>
+                                                <include reference="X0j-VA-HdR"/>
+                                                <include reference="Bol-lf-1qU"/>
+                                                <include reference="Vw3-HR-s1m"/>
+                                                <include reference="apZ-2T-ClK"/>
+                                                <include reference="hpr-Ly-bfH"/>
+                                                <include reference="2Pw-WG-ifd"/>
+                                                <include reference="D4i-Wm-sjA"/>
+                                                <include reference="Pc4-1n-BxT"/>
+                                                <include reference="g2s-69-0f5"/>
                                                 <include reference="dnR-ME-FKx"/>
                                                 <include reference="euX-2E-DmT"/>
+                                                <include reference="IXk-g3-YTg"/>
+                                                <include reference="r8n-ka-1bn"/>
                                                 <include reference="N7u-Bs-MtD"/>
                                                 <include reference="V3G-97-aMt"/>
                                                 <include reference="q72-F7-jg9"/>
@@ -11421,24 +11541,12 @@ We implement security measures designed to protect your information from unautho
                                                 <include reference="XSK-Tv-yVl"/>
                                                 <include reference="Zfj-js-5Ty"/>
                                                 <include reference="sip-PJ-h5a"/>
-                                                <include reference="5LV-yW-9z3"/>
-                                                <include reference="X0j-VA-HdR"/>
-                                                <include reference="2Pw-WG-ifd"/>
-                                                <include reference="D4i-Wm-sjA"/>
-                                                <include reference="Pc4-1n-BxT"/>
-                                                <include reference="g2s-69-0f5"/>
-                                                <include reference="TC8-As-K1i"/>
-                                                <include reference="s7m-XK-mdQ"/>
-                                                <include reference="swd-78-Ybs"/>
-                                                <include reference="1Em-D7-Aul"/>
-                                                <include reference="kw6-UY-fkH"/>
-                                                <include reference="uib-bg-eHe"/>
-                                                <include reference="IXk-g3-YTg"/>
-                                                <include reference="r8n-ka-1bn"/>
-                                                <include reference="Bol-lf-1qU"/>
-                                                <include reference="Vw3-HR-s1m"/>
-                                                <include reference="apZ-2T-ClK"/>
-                                                <include reference="hpr-Ly-bfH"/>
+                                                <include reference="COA-xL-L2X"/>
+                                                <include reference="XdG-M8-Wds"/>
+                                                <include reference="drd-ga-IIY"/>
+                                                <include reference="7bm-MX-jtD"/>
+                                                <include reference="hjX-58-OgI"/>
+                                                <include reference="p7W-EP-Fcf"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -11514,6 +11622,7 @@ We implement security measures designed to protect your information from unautho
                         <outlet property="addImage3" destination="EZB-Vp-bBS" id="cXH-gl-QsY"/>
                         <outlet property="addImage4" destination="TQY-fr-7wf" id="5b0-yl-ekR"/>
                         <outlet property="answersContainer" destination="GK2-Dh-HhN" id="LXy-52-YKV"/>
+                        <outlet property="closeButton" destination="gc1-f5-2mx" id="ZCR-aq-yIJ"/>
                         <outlet property="imageQuestionContainer" destination="EXh-nW-59d" id="Kua-Gh-tlS"/>
                         <outlet property="numberOfImageContacts" destination="VE5-xA-8qD" id="zj2-f4-fxx"/>
                     </connections>
@@ -11717,7 +11826,8 @@ We implement security measures designed to protect your information from unautho
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BC-gy-7BY">
                                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                        <state key="normal" image="Updated_clear"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                        <state key="normal" title="Clear"/>
                                                         <connections>
                                                             <action selector="clear:" destination="aTk-hf-qag" eventType="touchUpInside" id="2cd-86-TAe"/>
                                                         </connections>
@@ -11760,7 +11870,7 @@ We implement security measures designed to protect your information from unautho
                                                         <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                                     </constraint>
                                                     <constraint firstItem="6BC-gy-7BY" firstAttribute="leading" secondItem="CYP-23-tP1" secondAttribute="centerX" multiplier="1.8" id="XwE-he-uW8">
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="-8"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
                                                     </constraint>
                                                     <constraint firstItem="Wnh-gN-cxm" firstAttribute="centerY" secondItem="6BC-gy-7BY" secondAttribute="centerY" id="zRT-fZ-2uQ"/>
                                                 </constraints>
@@ -12135,26 +12245,10 @@ We implement security measures designed to protect your information from unautho
                                                 <exclude reference="29F-Gm-d6d"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="2y0-yA-CcA"/>
-                                                <exclude reference="Lxt-ot-AdE"/>
-                                                <exclude reference="bFx-ah-svM"/>
-                                                <exclude reference="3d6-EC-UR2"/>
-                                                <exclude reference="DYc-uZ-CTP"/>
-                                                <exclude reference="Ff2-Pa-Ljw"/>
-                                                <exclude reference="Wwo-aH-VPg"/>
-                                                <exclude reference="XNT-VG-FGi"/>
-                                                <exclude reference="25r-Jd-ic4"/>
-                                                <exclude reference="aOT-Sp-u8h"/>
-                                                <exclude reference="cPc-oy-5bn"/>
-                                                <exclude reference="K3K-UF-wXQ"/>
-                                                <exclude reference="QeR-lR-GbQ"/>
-                                                <exclude reference="mEi-Te-yI6"/>
-                                                <exclude reference="umW-pW-WSx"/>
-                                                <exclude reference="BCx-3X-sSX"/>
-                                                <exclude reference="Oxa-YD-YUE"/>
-                                                <exclude reference="tFw-6A-jm3"/>
-                                                <exclude reference="HOH-z8-SSz"/>
-                                                <exclude reference="boh-Fn-6jv"/>
+                                                <exclude reference="0ox-Ug-3FZ"/>
+                                                <exclude reference="HM5-0B-89d"/>
+                                                <exclude reference="bbB-2b-RgV"/>
+                                                <exclude reference="ner-rF-vzv"/>
                                                 <exclude reference="Gyi-kr-Vgx"/>
                                                 <exclude reference="Yac-Rt-XYF"/>
                                                 <exclude reference="dvl-l7-fQ7"/>
@@ -12162,17 +12256,33 @@ We implement security measures designed to protect your information from unautho
                                                 <exclude reference="knK-4W-IPO"/>
                                                 <exclude reference="ru2-PB-II3"/>
                                                 <exclude reference="upM-on-FlE"/>
+                                                <exclude reference="HOH-z8-SSz"/>
+                                                <exclude reference="boh-Fn-6jv"/>
                                                 <exclude reference="5z3-b0-OYo"/>
                                                 <exclude reference="NRr-om-SXS"/>
                                                 <exclude reference="dn1-ES-9Qy"/>
                                                 <exclude reference="qGy-Nw-uq9"/>
                                                 <exclude reference="tr6-KZ-dKM"/>
+                                                <exclude reference="Wwo-aH-VPg"/>
+                                                <exclude reference="XNT-VG-FGi"/>
                                                 <exclude reference="8rD-0R-Pma"/>
                                                 <exclude reference="dmc-O5-J3E"/>
-                                                <exclude reference="0ox-Ug-3FZ"/>
-                                                <exclude reference="HM5-0B-89d"/>
-                                                <exclude reference="bbB-2b-RgV"/>
-                                                <exclude reference="ner-rF-vzv"/>
+                                                <exclude reference="K3K-UF-wXQ"/>
+                                                <exclude reference="QeR-lR-GbQ"/>
+                                                <exclude reference="mEi-Te-yI6"/>
+                                                <exclude reference="umW-pW-WSx"/>
+                                                <exclude reference="25r-Jd-ic4"/>
+                                                <exclude reference="aOT-Sp-u8h"/>
+                                                <exclude reference="cPc-oy-5bn"/>
+                                                <exclude reference="2y0-yA-CcA"/>
+                                                <exclude reference="Lxt-ot-AdE"/>
+                                                <exclude reference="bFx-ah-svM"/>
+                                                <exclude reference="BCx-3X-sSX"/>
+                                                <exclude reference="Oxa-YD-YUE"/>
+                                                <exclude reference="tFw-6A-jm3"/>
+                                                <exclude reference="3d6-EC-UR2"/>
+                                                <exclude reference="DYc-uZ-CTP"/>
+                                                <exclude reference="Ff2-Pa-Ljw"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -12192,26 +12302,10 @@ We implement security measures designed to protect your information from unautho
                                                 <include reference="29F-Gm-d6d"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="2y0-yA-CcA"/>
-                                                <include reference="Lxt-ot-AdE"/>
-                                                <include reference="bFx-ah-svM"/>
-                                                <include reference="3d6-EC-UR2"/>
-                                                <include reference="DYc-uZ-CTP"/>
-                                                <include reference="Ff2-Pa-Ljw"/>
-                                                <include reference="Wwo-aH-VPg"/>
-                                                <include reference="XNT-VG-FGi"/>
-                                                <include reference="25r-Jd-ic4"/>
-                                                <include reference="aOT-Sp-u8h"/>
-                                                <include reference="cPc-oy-5bn"/>
-                                                <include reference="K3K-UF-wXQ"/>
-                                                <include reference="QeR-lR-GbQ"/>
-                                                <include reference="mEi-Te-yI6"/>
-                                                <include reference="umW-pW-WSx"/>
-                                                <include reference="BCx-3X-sSX"/>
-                                                <include reference="Oxa-YD-YUE"/>
-                                                <include reference="tFw-6A-jm3"/>
-                                                <include reference="HOH-z8-SSz"/>
-                                                <include reference="boh-Fn-6jv"/>
+                                                <include reference="0ox-Ug-3FZ"/>
+                                                <include reference="HM5-0B-89d"/>
+                                                <include reference="bbB-2b-RgV"/>
+                                                <include reference="ner-rF-vzv"/>
                                                 <include reference="Gyi-kr-Vgx"/>
                                                 <include reference="Yac-Rt-XYF"/>
                                                 <include reference="dvl-l7-fQ7"/>
@@ -12219,17 +12313,33 @@ We implement security measures designed to protect your information from unautho
                                                 <include reference="knK-4W-IPO"/>
                                                 <include reference="ru2-PB-II3"/>
                                                 <include reference="upM-on-FlE"/>
+                                                <include reference="HOH-z8-SSz"/>
+                                                <include reference="boh-Fn-6jv"/>
                                                 <include reference="5z3-b0-OYo"/>
                                                 <include reference="NRr-om-SXS"/>
                                                 <include reference="dn1-ES-9Qy"/>
                                                 <include reference="qGy-Nw-uq9"/>
                                                 <include reference="tr6-KZ-dKM"/>
+                                                <include reference="Wwo-aH-VPg"/>
+                                                <include reference="XNT-VG-FGi"/>
                                                 <include reference="8rD-0R-Pma"/>
                                                 <include reference="dmc-O5-J3E"/>
-                                                <include reference="0ox-Ug-3FZ"/>
-                                                <include reference="HM5-0B-89d"/>
-                                                <include reference="bbB-2b-RgV"/>
-                                                <include reference="ner-rF-vzv"/>
+                                                <include reference="K3K-UF-wXQ"/>
+                                                <include reference="QeR-lR-GbQ"/>
+                                                <include reference="mEi-Te-yI6"/>
+                                                <include reference="umW-pW-WSx"/>
+                                                <include reference="25r-Jd-ic4"/>
+                                                <include reference="aOT-Sp-u8h"/>
+                                                <include reference="cPc-oy-5bn"/>
+                                                <include reference="2y0-yA-CcA"/>
+                                                <include reference="Lxt-ot-AdE"/>
+                                                <include reference="bFx-ah-svM"/>
+                                                <include reference="BCx-3X-sSX"/>
+                                                <include reference="Oxa-YD-YUE"/>
+                                                <include reference="tFw-6A-jm3"/>
+                                                <include reference="3d6-EC-UR2"/>
+                                                <include reference="DYc-uZ-CTP"/>
+                                                <include reference="Ff2-Pa-Ljw"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -12299,6 +12409,7 @@ We implement security measures designed to protect your information from unautho
                         <outlet property="activityLabel" destination="ugV-2m-qNc" id="nEw-gS-UN7"/>
                         <outlet property="activityView" destination="kgd-k2-cqD" id="c5t-f7-bOK"/>
                         <outlet property="answersContainer" destination="1Pz-F8-m7G" id="QEV-SU-JrF"/>
+                        <outlet property="closeButton" destination="6BC-gy-7BY" id="Mdb-DX-6W4"/>
                         <outlet property="mainImage" destination="QEu-l1-8cs" id="vVo-16-Q5Q"/>
                         <outlet property="numberOfPrecannedContacts" destination="29F-Gm-d6d" id="vU4-Oj-aDP"/>
                         <outlet property="precannedQuestionContainer" destination="BXq-wU-fpu" id="ovs-Jn-kYr"/>
@@ -12315,8 +12426,10 @@ We implement security measures designed to protect your information from unautho
         <image name="Add_image_blue" width="160" height="103"/>
         <image name="Back_button" width="123" height="123"/>
         <image name="Circle_pic" width="163" height="163"/>
+        <image name="Command_central_preview" width="315" height="550"/>
         <image name="Comment_icon" width="61" height="61"/>
         <image name="Comment_icon_white" width="61" height="61"/>
+        <image name="Comments_preview" width="317" height="565"/>
         <image name="Completed" width="37" height="37"/>
         <image name="Contacts" width="639" height="116"/>
         <image name="Create" width="309" height="308"/>
@@ -12324,6 +12437,7 @@ We implement security measures designed to protect your information from unautho
         <image name="Full_circle" width="640" height="1031"/>
         <image name="Grey_button" width="500" height="75"/>
         <image name="Have_acct" width="637" height="106"/>
+        <image name="Image_fripple_preview" width="321" height="567"/>
         <image name="Image_option" width="130" height="56"/>
         <image name="Image_options_selected" width="128" height="56"/>
         <image name="Later" width="637" height="106"/>
@@ -12337,6 +12451,7 @@ We implement security measures designed to protect your information from unautho
         <image name="Overall_results" width="41" height="40"/>
         <image name="Plus_mark" width="26" height="26"/>
         <image name="Precanned" width="130" height="56"/>
+        <image name="Precanned_Fripple_preview" width="318" height="568"/>
         <image name="Precanned_selected" width="138" height="56"/>
         <image name="Privacy" width="33" height="33"/>
         <image name="Quesiton_background" width="640" height="214"/>
@@ -12346,7 +12461,7 @@ We implement security measures designed to protect your information from unautho
         <image name="Recieved" width="320" height="185"/>
         <image name="Recieved_fripple" width="48" height="45"/>
         <image name="Red_circle" width="50" height="50"/>
-        <image name="Results_image" width="50" height="50"/>
+        <image name="Results_preview" width="319" height="567"/>
         <image name="Ripple" width="80" height="140"/>
         <image name="Sad_blue" width="163" height="260"/>
         <image name="Send_bar" width="639" height="116"/>
@@ -12358,20 +12473,21 @@ We implement security measures designed to protect your information from unautho
         <image name="Submit" width="639" height="116"/>
         <image name="Support" width="136" height="128"/>
         <image name="Tagline" width="481" height="36"/>
+        <image name="Text_fripple_preview" width="319" height="567"/>
         <image name="Text_not_selected" width="130" height="56"/>
         <image name="Text_options" width="130" height="56"/>
         <image name="Update" width="232" height="96"/>
         <image name="Updated_clear" width="79" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Voe-hH-cqY"/>
+        <segue reference="GEt-gv-iEq"/>
+        <segue reference="feN-5J-It6"/>
+        <segue reference="5kd-oi-4b0"/>
+        <segue reference="Ull-cp-X6O"/>
+        <segue reference="s7r-Fk-kbA"/>
         <segue reference="fph-rq-y0K"/>
         <segue reference="CNY-84-OGc"/>
         <segue reference="XMV-1f-KuN"/>
-        <segue reference="Voe-hH-cqY"/>
-        <segue reference="5kd-oi-4b0"/>
-        <segue reference="GEt-gv-iEq"/>
-        <segue reference="feN-5J-It6"/>
-        <segue reference="TpA-KC-Hzi"/>
-        <segue reference="s7r-Fk-kbA"/>
     </inferredMetricsTieBreakers>
 </document>

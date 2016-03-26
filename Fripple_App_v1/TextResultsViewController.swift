@@ -45,7 +45,8 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Layout formats for answer options
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         
         self.surveyQuestion.layer.cornerRadius = 5
@@ -96,6 +97,7 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //Parse query to get results for specific fripple
     func getResults(){
         
         if ((PFUser.currentUser()) != nil) {
@@ -215,6 +217,7 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //Parse query to count the number of fripples that have been completed and total number sent
     func getSurveyResults() {
         
         if ((PFUser.currentUser()) != nil) {
@@ -250,6 +253,7 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //Parse query to get comments for the specific fripple
     func retrieveComments () {
         
         self.activityIndicator.startAnimating()

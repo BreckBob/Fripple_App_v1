@@ -28,12 +28,15 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Make view datasource and delegate
         self.sentTableView.delegate = self
         self.sentTableView.dataSource = self
         
+        //Remove data and reload
         self.surveyData.removeAllObjects()
         self.loadData()
         
+        //Add the refresh capability
         self.sentTableView.addSubview(self.refreshControl)
     }
 
@@ -80,6 +83,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let surveyIdentifier = self.surveyData.objectAtIndex(indexPath.row) as! PFObject
         let surveyObjectId = surveyIdentifier.objectId! as String
         
+        //Get results data from parse to let user know if anyone has taken fripple
         if ((PFUser.currentUser()) != nil) {
             
             let resultsData = NSMutableArray()
@@ -135,6 +139,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
+    //Code to get survey data from parse and provide to view
     func loadData() {
         
         self.activityView.layer.cornerRadius = 10
@@ -172,6 +177,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        //Segues to determine which results screen the user goes to
         if (segue.identifier == "TextResultsSegue") {
             
             let toTextResultsViewController = segue.destinationViewController as! TextResultsViewController
@@ -197,6 +203,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         toViewController.transitioningDelegate = self.transitionManager
     }
     
+    //Code to handle deleting rows
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
         return true

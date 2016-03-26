@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up the formats for the view
         self.username.delegate = self
         self.password.delegate = self
         
@@ -68,7 +69,7 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         
         var errorMessage = "There was an error, please try again later"
-        
+        //Check if the ext fields have data and if not present an error
         if self.username.text == "" || self.password.text == "" {
             self.activityIndicator.stopAnimating()
             self.activityLabel.alpha = 0
@@ -78,7 +79,7 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
             displayAlert("There was an error", message: "Please make sure all fields are filled out")
         }
         else {
-            
+            //If successful, login using parse, else present an error
             PFUser.logInWithUsernameInBackground(username.text!, password: password.text!) { (user, error) -> Void in
                 
                 if user != nil {
@@ -119,28 +120,6 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         let signUp = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") as! SignUpViewController
         self.presentViewController(signUp, animated: false, completion: nil)
         
-    }
-    
-    @IBAction func forgotPassword(sender: AnyObject) {
-        
-        
-        
-    }
-    
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-            switch(result) {
-                
-            case MFMailComposeResultSent:
-                NSLog("Mail was sent")
-            case MFMailComposeResultFailed:
-                NSLog("Mail failed to send")
-            case MFMailComposeResultSaved:
-                NSLog("Mail was saved")
-            default:
-                NSLog("Something else happened")
-            }
-            
-            self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){

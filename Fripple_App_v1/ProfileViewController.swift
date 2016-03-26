@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Set up formats for view
         self.name.delegate = self
         self.mobile.delegate = self
         self.username.delegate = self
@@ -79,7 +79,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         self.activityView.alpha = 1
         UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         
-        //Check to see if any fields are empty
+        //Check to see if any fields are empty and if so display alert
         if (self.name.text!.isEmpty || self.mobile.text!.isEmpty || self.username.text!.isEmpty || self.email.text!.isEmpty) {
             
             self.stopIndicator()
@@ -100,7 +100,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         let userMobile = self.mobile.text
         let userUsername = self.username.text
         let userEmail = self.email.text
-        
+        //If all fields are completed update info to parse
         myUser!.setObject(userName!, forKey: "realName")
         myUser!.setObject(userMobile!, forKey: "phoneNumber")
         myUser!.setObject(userUsername!, forKey: "username")
@@ -121,7 +121,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             }
             
             if (success) {
-                
+                //If info updated successfully display alert
                 let alert = UIAlertController(title: "Success", message: "Profile details successfully updated", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 self.activityIndicator.startAnimating()
@@ -131,14 +131,15 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
                 alert.addAction(UIAlertAction(title: "Great, thanks!", style: .Default, handler: { (action) -> Void in
                     
                     if (!self.password.text!.isEmpty) {
-                    
+                        //If the user changed thier password, log them out and send them to the main login page
+                        
                         PFUser.logOut()
                         
                         let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! PageViewController
                         self.presentViewController(welcome, animated: false, completion: nil)
                     }
                     else {
-                                               
+                        //If the user didn't change their password send them to command center
                         let container = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
                         self.presentViewController(container, animated: false, completion: nil)
                     }

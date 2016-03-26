@@ -27,6 +27,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
     var textContactsString:String!
     @IBOutlet weak var numberOfContacts: UILabel!
     var imagePicked = false
+    @IBOutlet weak var closeButton: UIButton!
     
     var listOfContacts = [String]()
     var listOfPhoneNumbers = [String]()
@@ -51,16 +52,19 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
         
     }
 
+    //Getting the count of contacts
     @IBAction func unwindFromContacts (sender: UIStoryboardSegue){
         self.numberOfContacts.text = ("\(listOfContacts.count)")
     }
     
+    //Capturing data from the precanned view controller
     @IBAction func unwindToNewSurveyViewController (sender: UIStoryboardSegue){
         self.questionContainer.text = questionText
         self.numberOfContacts.text = textContactsString
         
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         
+        //Capturing the image from the precanned view controller
         if imageFromPrecannedFrippleBool == true {
             self.mainImage.layer.masksToBounds = false
             self.mainImage.layer.cornerRadius = 45
@@ -74,6 +78,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
         }
     }
     
+    //Capturing data from the image view controller
     @IBAction func unwindFromImageController (sender: UIStoryboardSegue){
         self.questionContainer.text = questionText
         self.numberOfContacts.text = textContactsString
@@ -82,6 +87,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up fromats for view controller
         textFields = [answer1Text, answer2Text, answer3Text, answer4Text]
         
         for textField in textFields {
@@ -150,6 +156,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        
         view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
@@ -204,6 +211,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
+        //Segues to pass data to other view controllers
         if segue.identifier == "toNewImageSegue" {
             let toNewFrippleImageViewController = segue.destinationViewController as! NewFrippleImageViewController
             toNewFrippleImageViewController.questionText = questionContainer.text
@@ -242,8 +250,8 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
     
     }
 
-    
     @IBAction func sendFripple(sender: AnyObject) {
+        
         //Code to check if the text or image options are blank
         if (self.questionContainer.text != "" &&
             self.answer1Text.text != "" &&

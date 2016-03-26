@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
 
@@ -16,6 +17,7 @@ class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Set up the formats for the view controller
         self.emailField.delegate = self
         
         self.emailField.layer.cornerRadius = 5
@@ -32,6 +34,42 @@ class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func recoverButtonTapped(sender: AnyObject) {
+    
+        let userEmail = self.emailField.text
+        
+        //Request email reset from parse. If its succesfull, an email will be sent to the email address. If not, an error is presented
+        PFUser.requestPasswordResetForEmailInBackground(userEmail!) { (success, error) -> Void in
+            
+            if(success)
+            {
+                let successMessage = "An email message was sent to you at \(userEmail!)"
+                self.displayMessage(successMessage)
+                return
+            }
+        
+            if(error != nil)
+            {
+                let errorMessage = error!.userInfo["error"] as! String
+                self.displayMessage(errorMessage)
+            }
+        }
+    }
+    
+    func displayMessage(theMessage:String) {
+        
+        //Display alert message with confirmation
+        let myAlert = UIAlertController(title: "Alert", message: theMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
+            action in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        myAlert.addAction(okAction)
+        self.presentViewController(myAlert, animated: true, completion: nil)
+        
+    }
     
     @IBAction func cancelButtonTapped(sender: AnyObject) {
         

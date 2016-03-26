@@ -12,7 +12,7 @@ import Foundation
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     var index = 0
-    var identifiers: NSArray = ["WelcomeViewController", "CreateExampleOneViewController", "CreateExampleTwoViewController", "CreateExampleThreeViewController", "ResultsViewController"]
+    var identifiers: NSArray = ["WelcomeViewController", "CommandCentralPreviewViewController", "CreateExampleOneViewController", "CreateExampleTwoViewController", "CreateExampleThreeViewController", "ResultsViewController", "CommentsPreviewViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,19 +91,27 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         }
         
         if index == 1 {
-            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleOneViewController")
+            return storyBoard.instantiateViewControllerWithIdentifier("CommandCentralPreviewViewController")
         }
         
         if index == 2 {
-            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleTwoViewController")
+            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleOneViewController")
         }
         
         if index == 3 {
-            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleThreeViewController")
+            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleTwoViewController")
         }
         
         if index == 4 {
+            return storyBoard.instantiateViewControllerWithIdentifier("CreateExampleThreeViewController")
+        }
+        
+        if index == 5 {
             return storyBoard.instantiateViewControllerWithIdentifier("ResultsViewController")
+        }
+        
+        if index == 6 {
+            return storyBoard.instantiateViewControllerWithIdentifier("CommentsPreviewViewController")
         }
         return nil
     }

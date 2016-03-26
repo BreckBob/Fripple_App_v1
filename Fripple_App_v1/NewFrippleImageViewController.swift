@@ -23,6 +23,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     @IBOutlet weak var addImage2: UIImageView!
     @IBOutlet weak var addImage3: UIImageView!
     @IBOutlet weak var addImage4: UIImageView!
+    @IBOutlet weak var closeButton: UIButton!
     
     let tapGesture1 = UITapGestureRecognizer()
     let tapGesture2 = UITapGestureRecognizer()
@@ -43,6 +44,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
     
+    //Getting the count of contacts
     @IBAction func unwindFromContacts (sender: UIStoryboardSegue){
         self.numberOfImageContacts.text = ("\(listOfContacts.count)")
     }
@@ -50,9 +52,11 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Bring in question text and image from text view controller if its present
         imageQuestionContainer.text = questionText
         numberOfImageContacts.text = imageContactsString
         
+        //Set formats for view controller
         self.imageQuestionContainer.delegate = self
         
         self.imageQuestionContainer.layer.cornerRadius = 5
@@ -60,12 +64,14 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         self.imageQuestionContainer.layer.borderColor = borderColor.CGColor
         
+        //Set up notifications for keyboard
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
         
         self.answersContainer.layer.borderWidth = 2
         self.answersContainer.layer.borderColor = borderColor.CGColor
 
+        //Add tap gestures to image views
         tapGesture1.addTarget(self, action: "tappedImportImage1")
         addImage1.addGestureRecognizer(tapGesture1)
         addImage1.userInteractionEnabled = true
@@ -110,6 +116,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        
         view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
@@ -124,6 +131,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
+        //Segues to pass data to other view controllers
         if segue.identifier == "toPrecannedSegue" {
             let toNewFripplePrecannedViewController = segue.destinationViewController as! NewFripplePrecannedViewController
             toNewFripplePrecannedViewController.questionText = imageQuestionContainer.text
@@ -248,7 +256,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
         }
     }
     
-    
+    //Upload info to parse
     @IBAction func sendFripple(sender: AnyObject) {
         //Code to check if the text or image options are blank
         if (self.imageQuestionContainer.text != "" &&

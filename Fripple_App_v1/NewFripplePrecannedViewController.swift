@@ -21,6 +21,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
     var imageFromNewFripple:UIImage!
     var imageFromNewFrippleBool:Bool!
     var presentedVC = "Precanned"
+    @IBOutlet weak var closeButton: UIButton!
     
     var listOfContacts = [String]()
     var listOfPhoneNumbers = [String]()
@@ -33,6 +34,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
     
+    //Getting the count of contacts
     @IBAction func unwindFromContacts (sender: UIStoryboardSegue){
         self.numberOfPrecannedContacts.text = ("\(listOfContacts.count)")
     }
@@ -40,9 +42,11 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Bring in question text and precanned contacts
         self.precannedQuestionContainer.text = questionText
         self.numberOfPrecannedContacts.text = precannedContactsString
         
+        //Set up formats for view controller
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         
         if imageFromNewFrippleBool == true {
@@ -73,6 +77,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
         self.answersContainer.layer.borderWidth = 2
         self.answersContainer.layer.borderColor = borderColor.CGColor
         
+        //Set up notifications for keyboard
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
         
@@ -109,6 +114,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        
         view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
@@ -123,6 +129,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
+        //Segues to pass data to other view controllers
         if segue.identifier == "toNewImageSegue" {
             let toNewFrippleImageViewController = segue.destinationViewController as! NewFrippleImageViewController
             toNewFrippleImageViewController.questionText = precannedQuestionContainer.text
@@ -188,6 +195,7 @@ class NewFripplePrecannedViewController: UIViewController, UITextViewDelegate, U
         mainImage.contentMode = .ScaleAspectFit
     }
     
+    //Upload info to parse
     @IBAction func sendFripple(sender: AnyObject) {
         //Code to check if the text or image options are blank
         if (self.precannedQuestionContainer.text != "" &&

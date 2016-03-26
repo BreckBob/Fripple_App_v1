@@ -29,7 +29,8 @@ class TakePrecannedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Set up formats for view and load fripple data
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
         
         self.surveyQuestion.layer.cornerRadius = 5
@@ -76,7 +77,7 @@ class TakePrecannedViewController: UIViewController {
     @IBAction func backButtonTapped(sender: AnyObject) {
         dismissViewControllerAnimated(false, completion: nil)
     }
-    
+    //Code to get data from parse 
     func loadData() {
         
         if ((PFUser.currentUser()) != nil) {
@@ -126,7 +127,7 @@ class TakePrecannedViewController: UIViewController {
             })
         }
     }
-
+    //Code when user selects their answer to change image
     func tappedAnswer1() {
         
         self.selectedAnswer = 1
@@ -157,6 +158,7 @@ class TakePrecannedViewController: UIViewController {
         
     }
     
+    //Submit the users answers to parse
     @IBAction func submitButtonTapped(sender: AnyObject) {
         
         if self.selectedAnswer != 0 {

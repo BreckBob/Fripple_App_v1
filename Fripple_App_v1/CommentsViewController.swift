@@ -113,7 +113,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
-    
+    //Post the comment
     @IBAction func postButtonTapped(sender: AnyObject) {
         
         self.messageTextField.endEditing(true)
@@ -143,6 +143,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    //Parse query to get comments for the specific fripple
     func retrieveComments () {
         
         self.hiddenView.alpha = 1

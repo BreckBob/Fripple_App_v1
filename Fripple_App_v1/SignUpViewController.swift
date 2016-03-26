@@ -30,6 +30,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up the format for the view
         self.name.delegate = self
         self.mobile.delegate = self
         self.username.delegate = self
@@ -85,7 +86,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         //Code to reformat phone number to only numbers
         let orginalMobileNumber = mobile.text
         let newFormatedPhoneNumber = orginalMobileNumber!.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet().invertedSet).joinWithSeparator("")
-        
+        //Check to make sure fields are completed and if not display alert
         if self.name.text!.isEmpty || self.mobile.text!.isEmpty || self.username.text!.isEmpty || self.email.text!.isEmpty || self.password.text!.isEmpty || self.repeatPassword.text!.isEmpty {
             
             self.activityIndicator.stopAnimating()
@@ -128,6 +129,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                         self.displayAlert("There was an error", message: "That phone number has already been used, please enter another one")
                     }
                     else {
+                        //If everything is ok sign up user and save info to parse
                         let user = PFUser()
                         user.username = self.username.text
                         user.password = self.password.text
@@ -211,26 +213,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.presentViewController(login, animated: false, completion: nil)
         
     }
-    
-    
-//    @IBAction func fbLogin(sender: AnyObject) {
-//        
-//        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions) {
-//            (user: PFUser?, error: NSError?) -> Void in
-//            if let user = user {
-//                if user.isNew {
-//                    print("User signed up and logged in through Facebook!")
-//                    user.saveInBackground()
-//                    self.goToCommandCentral()
-//                } else {
-//                    print("User logged in through Facebook!")
-//                    self.goToCommandCentral()
-//                }
-//            } else {
-//                print("Uh oh. The user cancelled the Facebook login.")
-//            }
-//        }
-//    }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
         view.endEditing(true)
