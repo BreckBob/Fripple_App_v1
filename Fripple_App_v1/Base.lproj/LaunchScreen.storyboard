@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="K6d-iy-Pgb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K6d-iy-Pgb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="mgF-ig-5Ld"/>
+                            <constraint firstAttribute="trailing" secondItem="K6d-iy-Pgb" secondAttribute="trailing" id="rMB-H6-RJi"/>
+                            <constraint firstItem="K6d-iy-Pgb" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="uHb-fI-aPu"/>
+                            <constraint firstItem="K6d-iy-Pgb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vVU-Zn-mim"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="K6d-iy-Pgb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="mgF-ig-5Ld"/>
+                                <exclude reference="rMB-H6-RJi"/>
+                                <exclude reference="uHb-fI-aPu"/>
+                                <exclude reference="vVU-Zn-mim"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="K6d-iy-Pgb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="mgF-ig-5Ld"/>
+                                <include reference="rMB-H6-RJi"/>
+                                <include reference="uHb-fI-aPu"/>
+                                <include reference="vVU-Zn-mim"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
@@ -26,4 +58,7 @@
             <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Full_circle" width="640" height="1031"/>
+    </resources>
 </document>

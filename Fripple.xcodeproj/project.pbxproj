@@ -124,16 +124,16 @@
 		893FD7981C151B0E00F9EB9B /* TransitionManagerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManagerTwo.swift; sourceTree = "<group>"; };
 		893FD79A1C1530F100F9EB9B /* SentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentViewController.swift; sourceTree = "<group>"; };
 		8948E0321BFAB29C000690DB /* NewFrippleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFrippleImageViewController.swift; sourceTree = "<group>"; };
-		894FF9381BE573D000B30E06 /* Fripple_App_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fripple_App_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		894FF9381BE573D000B30E06 /* Fripple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fripple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		894FF93B1BE573D000B30E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894FF9401BE573D000B30E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		894FF9421BE573D000B30E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894FF9451BE573D000B30E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		894FF9471BE573D000B30E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		894FF94C1BE573D000B30E06 /* Fripple_App_v1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fripple_App_v1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		894FF94C1BE573D000B30E06 /* Fripple.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fripple.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		894FF9501BE573D000B30E06 /* Fripple_App_v1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fripple_App_v1Tests.swift; sourceTree = "<group>"; };
 		894FF9521BE573D000B30E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		894FF9571BE573D000B30E06 /* Fripple_App_v1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fripple_App_v1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		894FF9571BE573D000B30E06 /* Fripple.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fripple.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		894FF95B1BE573D000B30E06 /* Fripple_App_v1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fripple_App_v1UITests.swift; sourceTree = "<group>"; };
 		894FF95D1BE573D000B30E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896775861C6DA146001D0818 /* TakeTextFrippleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeTextFrippleViewController.swift; sourceTree = "<group>"; };
@@ -265,9 +265,9 @@
 		894FF9391BE573D000B30E06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				894FF9381BE573D000B30E06 /* Fripple_App_v1.app */,
-				894FF94C1BE573D000B30E06 /* Fripple_App_v1Tests.xctest */,
-				894FF9571BE573D000B30E06 /* Fripple_App_v1UITests.xctest */,
+				894FF9381BE573D000B30E06 /* Fripple.app */,
+				894FF94C1BE573D000B30E06 /* Fripple.xctest */,
+				894FF9571BE573D000B30E06 /* Fripple.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,9 +400,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		894FF9371BE573D000B30E06 /* Fripple_App_v1 */ = {
+		894FF9371BE573D000B30E06 /* Fripple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 894FF9601BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1" */;
+			buildConfigurationList = 894FF9601BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple" */;
 			buildPhases = (
 				894FF9341BE573D000B30E06 /* Sources */,
 				894FF9351BE573D000B30E06 /* Frameworks */,
@@ -412,14 +412,14 @@
 			);
 			dependencies = (
 			);
-			name = Fripple_App_v1;
+			name = Fripple;
 			productName = Fripple_App_v1;
-			productReference = 894FF9381BE573D000B30E06 /* Fripple_App_v1.app */;
+			productReference = 894FF9381BE573D000B30E06 /* Fripple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		894FF94B1BE573D000B30E06 /* Fripple_App_v1Tests */ = {
+		894FF94B1BE573D000B30E06 /* FrippleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 894FF9631BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1Tests" */;
+			buildConfigurationList = 894FF9631BE573D000B30E06 /* Build configuration list for PBXNativeTarget "FrippleTests" */;
 			buildPhases = (
 				894FF9481BE573D000B30E06 /* Sources */,
 				894FF9491BE573D000B30E06 /* Frameworks */,
@@ -430,14 +430,14 @@
 			dependencies = (
 				894FF94E1BE573D000B30E06 /* PBXTargetDependency */,
 			);
-			name = Fripple_App_v1Tests;
+			name = FrippleTests;
 			productName = Fripple_App_v1Tests;
-			productReference = 894FF94C1BE573D000B30E06 /* Fripple_App_v1Tests.xctest */;
+			productReference = 894FF94C1BE573D000B30E06 /* Fripple.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		894FF9561BE573D000B30E06 /* Fripple_App_v1UITests */ = {
+		894FF9561BE573D000B30E06 /* FrippleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 894FF9661BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1UITests" */;
+			buildConfigurationList = 894FF9661BE573D000B30E06 /* Build configuration list for PBXNativeTarget "FrippleUITests" */;
 			buildPhases = (
 				894FF9531BE573D000B30E06 /* Sources */,
 				894FF9541BE573D000B30E06 /* Frameworks */,
@@ -448,9 +448,9 @@
 			dependencies = (
 				894FF9591BE573D000B30E06 /* PBXTargetDependency */,
 			);
-			name = Fripple_App_v1UITests;
+			name = FrippleUITests;
 			productName = Fripple_App_v1UITests;
-			productReference = 894FF9571BE573D000B30E06 /* Fripple_App_v1UITests.xctest */;
+			productReference = 894FF9571BE573D000B30E06 /* Fripple.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -477,7 +477,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 894FF9331BE573CF00B30E06 /* Build configuration list for PBXProject "Fripple_App_v1" */;
+			buildConfigurationList = 894FF9331BE573CF00B30E06 /* Build configuration list for PBXProject "Fripple" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -490,9 +490,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				894FF9371BE573D000B30E06 /* Fripple_App_v1 */,
-				894FF94B1BE573D000B30E06 /* Fripple_App_v1Tests */,
-				894FF9561BE573D000B30E06 /* Fripple_App_v1UITests */,
+				894FF9371BE573D000B30E06 /* Fripple */,
+				894FF94B1BE573D000B30E06 /* FrippleTests */,
+				894FF9561BE573D000B30E06 /* FrippleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,12 +615,12 @@
 /* Begin PBXTargetDependency section */
 		894FF94E1BE573D000B30E06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 894FF9371BE573D000B30E06 /* Fripple_App_v1 */;
+			target = 894FF9371BE573D000B30E06 /* Fripple */;
 			targetProxy = 894FF94D1BE573D000B30E06 /* PBXContainerItemProxy */;
 		};
 		894FF9591BE573D000B30E06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 894FF9371BE573D000B30E06 /* Fripple_App_v1 */;
+			target = 894FF9371BE573D000B30E06 /* Fripple */;
 			targetProxy = 894FF9581BE573D000B30E06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -741,7 +741,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fripple;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -763,7 +763,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fripple;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -776,8 +776,8 @@
 				INFOPLIST_FILE = Fripple_App_v1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fripple_App_v1.app/Fripple_App_v1";
+				PRODUCT_NAME = Fripple;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fripple.app/Fripple";
 			};
 			name = Debug;
 		};
@@ -788,8 +788,8 @@
 				INFOPLIST_FILE = Fripple_App_v1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fripple_App_v1.app/Fripple_App_v1";
+				PRODUCT_NAME = Fripple;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fripple.app/Fripple";
 			};
 			name = Release;
 		};
@@ -799,7 +799,7 @@
 				INFOPLIST_FILE = Fripple_App_v1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fripple;
 				TEST_TARGET_NAME = Fripple_App_v1;
 				USES_XCTRUNNER = YES;
 			};
@@ -811,7 +811,7 @@
 				INFOPLIST_FILE = Fripple_App_v1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fripple;
 				TEST_TARGET_NAME = Fripple_App_v1;
 				USES_XCTRUNNER = YES;
 			};
@@ -820,7 +820,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		894FF9331BE573CF00B30E06 /* Build configuration list for PBXProject "Fripple_App_v1" */ = {
+		894FF9331BE573CF00B30E06 /* Build configuration list for PBXProject "Fripple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				894FF95E1BE573D000B30E06 /* Debug */,
@@ -829,7 +829,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		894FF9601BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1" */ = {
+		894FF9601BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				894FF9611BE573D000B30E06 /* Debug */,
@@ -838,7 +838,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		894FF9631BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1Tests" */ = {
+		894FF9631BE573D000B30E06 /* Build configuration list for PBXNativeTarget "FrippleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				894FF9641BE573D000B30E06 /* Debug */,
@@ -847,7 +847,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		894FF9661BE573D000B30E06 /* Build configuration list for PBXNativeTarget "Fripple_App_v1UITests" */ = {
+		894FF9661BE573D000B30E06 /* Build configuration list for PBXNativeTarget "FrippleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				894FF9671BE573D000B30E06 /* Debug */,

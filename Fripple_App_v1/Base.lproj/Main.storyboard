@@ -13,7 +13,7 @@
         <!--Splash View Controller-->
         <scene sceneID="Ytj-zA-zPh">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ffu-zI-oSr" customClass="SplashViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ffu-zI-oSr" customClass="SplashViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SmX-20-vsb"/>
                         <viewControllerLayoutGuide type="bottom" id="t9u-xG-u6D"/>
@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-EG-KKG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full_circle" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-EG-KKG">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-hR-kyH">
@@ -174,7 +174,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -387,7 +387,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="z2m-UR-9Lp">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kdT-7m-aSm" customClass="SignUpViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kdT-7m-aSm" customClass="SignUpViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jnG-aw-3qe"/>
                         <viewControllerLayoutGuide type="bottom" id="mDY-5l-6xA"/>
@@ -810,7 +810,7 @@
         <!--Login View Controller-->
         <scene sceneID="Lgo-oj-8Y0">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cVC-mL-aiD" customClass="LoginViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cVC-mL-aiD" customClass="LoginViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Kw-J7-iF5"/>
                         <viewControllerLayoutGuide type="bottom" id="EfV-qu-6IY"/>
@@ -1113,7 +1113,7 @@
         <!--Recovery Email View Controller-->
         <scene sceneID="ApR-ei-1bH">
             <objects>
-                <viewController storyboardIdentifier="RecoveryEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nCs-uF-wCk" customClass="RecoveryEmailViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecoveryEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nCs-uF-wCk" customClass="RecoveryEmailViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7fi-ac-zfz"/>
                         <viewControllerLayoutGuide type="bottom" id="IYS-KB-m2P"/>
@@ -1310,7 +1310,7 @@
         <!--About View Controller-->
         <scene sceneID="Fr2-e5-Xoh">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m2Q-g7-jUj" customClass="AboutViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m2Q-g7-jUj" customClass="AboutViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iBv-zs-m5Z"/>
                         <viewControllerLayoutGuide type="bottom" id="cdM-PT-hie"/>
@@ -1503,7 +1503,7 @@ The Fripple Team</string>
         <!--Privacy View Controller-->
         <scene sceneID="kEF-lm-Xt9">
             <objects>
-                <viewController storyboardIdentifier="PrivacyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="24t-PW-4P8" customClass="PrivacyViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrivacyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="24t-PW-4P8" customClass="PrivacyViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1yS-BN-1Xh"/>
                         <viewControllerLayoutGuide type="bottom" id="S9f-Qp-ser"/>
@@ -1698,7 +1698,7 @@ We implement security measures designed to protect your information from unautho
         <!--Profile View Controller-->
         <scene sceneID="tVd-AR-hfn">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omr-vE-odU" customClass="ProfileViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omr-vE-odU" customClass="ProfileViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jsh-Xb-1E4"/>
                         <viewControllerLayoutGuide type="bottom" id="Nkw-ix-4k3"/>
@@ -2287,7 +2287,7 @@ We implement security measures designed to protect your information from unautho
         <!--Menu Table View Controller-->
         <scene sceneID="dXX-3q-hep">
             <objects>
-                <tableViewController restorationIdentifier="MenuTableViewController" storyboardIdentifier="MenuTableViewController" id="QWd-tb-1sk" customClass="MenuTableViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="MenuTableViewController" storyboardIdentifier="MenuTableViewController" id="QWd-tb-1sk" customClass="MenuTableViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Igj-Ks-xAj">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2795,7 +2795,7 @@ We implement security measures designed to protect your information from unautho
         <!--Recieved View Controller-->
         <scene sceneID="bS5-DJ-EED">
             <objects>
-                <viewController restorationIdentifier="RecievedViewController" storyboardIdentifier="RecievedViewController" id="93N-3f-CrI" customClass="RecievedViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RecievedViewController" storyboardIdentifier="RecievedViewController" id="93N-3f-CrI" customClass="RecievedViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hr3-79-u59"/>
                         <viewControllerLayoutGuide type="bottom" id="Myd-E6-UYF"/>
@@ -2914,7 +2914,7 @@ We implement security measures designed to protect your information from unautho
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="gdY-Qx-AQu" customClass="RecievedTableViewCell" customModule="Fripple_App_v1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="gdY-Qx-AQu" customClass="RecievedTableViewCell" customModule="Fripple" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gdY-Qx-AQu" id="lih-uF-PEy">
@@ -3410,7 +3410,7 @@ We implement security measures designed to protect your information from unautho
         <!--Take Precanned View Controller-->
         <scene sceneID="hsI-k7-fnc">
             <objects>
-                <viewController storyboardIdentifier="TakePrecannedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="36S-lC-3eK" customClass="TakePrecannedViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakePrecannedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="36S-lC-3eK" customClass="TakePrecannedViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8i8-Hd-Ids"/>
                         <viewControllerLayoutGuide type="bottom" id="DDg-1h-8FR"/>
@@ -4195,7 +4195,7 @@ We implement security measures designed to protect your information from unautho
         <!--Precanned Results View Controller-->
         <scene sceneID="dJl-yq-DfJ">
             <objects>
-                <viewController storyboardIdentifier="PrecannedResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="scj-FA-EKw" customClass="PrecannedResultsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrecannedResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="scj-FA-EKw" customClass="PrecannedResultsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M06-a0-Kqv"/>
                         <viewControllerLayoutGuide type="bottom" id="CXa-Gh-YP2"/>
@@ -5141,7 +5141,7 @@ We implement security measures designed to protect your information from unautho
         <!--Take Image View Controller-->
         <scene sceneID="Cr9-IL-YoE">
             <objects>
-                <viewController storyboardIdentifier="TakeImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kN8-JN-COr" customClass="TakeImageViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakeImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kN8-JN-COr" customClass="TakeImageViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AwJ-Hx-1tZ"/>
                         <viewControllerLayoutGuide type="bottom" id="gqP-Bn-ohc"/>
@@ -5772,7 +5772,7 @@ We implement security measures designed to protect your information from unautho
         <!--Take Text Fripple View Controller-->
         <scene sceneID="r3k-IP-Pja">
             <objects>
-                <viewController storyboardIdentifier="TakeTextFrippleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="brh-bD-ry4" customClass="TakeTextFrippleViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakeTextFrippleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="brh-bD-ry4" customClass="TakeTextFrippleViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QXA-aW-MLm"/>
                         <viewControllerLayoutGuide type="bottom" id="mIv-U1-oVp"/>
@@ -6488,7 +6488,7 @@ We implement security measures designed to protect your information from unautho
         <!--Text Results View Controller-->
         <scene sceneID="FVK-mw-0i4">
             <objects>
-                <viewController storyboardIdentifier="TextResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sOx-mV-gyO" customClass="TextResultsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sOx-mV-gyO" customClass="TextResultsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0F-A5-VBp"/>
                         <viewControllerLayoutGuide type="bottom" id="AN1-dS-4gt"/>
@@ -7367,7 +7367,7 @@ We implement security measures designed to protect your information from unautho
         <!--Comments View Controller-->
         <scene sceneID="BUa-GJ-aDS">
             <objects>
-                <viewController storyboardIdentifier="CommentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TxF-zF-FkS" customClass="CommentsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TxF-zF-FkS" customClass="CommentsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ghK-Cp-nz5"/>
                         <viewControllerLayoutGuide type="bottom" id="FAd-mi-s5V"/>
@@ -7765,7 +7765,7 @@ We implement security measures designed to protect your information from unautho
         <!--Image Results View Controller-->
         <scene sceneID="HVq-H4-0fH">
             <objects>
-                <viewController storyboardIdentifier="ImageResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T9q-Kt-UoD" customClass="ImageResultsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T9q-Kt-UoD" customClass="ImageResultsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IZx-vA-Zfu"/>
                         <viewControllerLayoutGuide type="bottom" id="L1k-fN-PA6"/>
@@ -8588,7 +8588,7 @@ We implement security measures designed to protect your information from unautho
         <!--Container View Controller-->
         <scene sceneID="ky5-ot-XYF">
             <objects>
-                <viewController restorationIdentifier="ContainerViewController" storyboardIdentifier="ContainerViewController" id="bFZ-lC-Zq5" customClass="ContainerViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ContainerViewController" storyboardIdentifier="ContainerViewController" id="bFZ-lC-Zq5" customClass="ContainerViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uzr-OS-kiu"/>
                         <viewControllerLayoutGuide type="bottom" id="Nuu-6m-eiy"/>
@@ -8667,7 +8667,7 @@ We implement security measures designed to protect your information from unautho
         <!--Create Example One View Controller-->
         <scene sceneID="2ow-5N-mRV">
             <objects>
-                <viewController restorationIdentifier="CreateExampleOneViewController" storyboardIdentifier="CreateExampleOneViewController" id="eN7-25-MbA" customClass="CreateExampleOneViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CreateExampleOneViewController" storyboardIdentifier="CreateExampleOneViewController" id="eN7-25-MbA" customClass="CreateExampleOneViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A22-fs-Mgb"/>
                         <viewControllerLayoutGuide type="bottom" id="Da9-35-R6L"/>
@@ -8719,7 +8719,7 @@ We implement security measures designed to protect your information from unautho
         <!--Create Example Two View Controller-->
         <scene sceneID="aeE-gs-gbc">
             <objects>
-                <viewController restorationIdentifier="CreateExampleTwoViewController" storyboardIdentifier="CreateExampleTwoViewController" id="3YQ-Na-u1h" customClass="CreateExampleTwoViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CreateExampleTwoViewController" storyboardIdentifier="CreateExampleTwoViewController" id="3YQ-Na-u1h" customClass="CreateExampleTwoViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0it-eC-Y66"/>
                         <viewControllerLayoutGuide type="bottom" id="W8V-jU-nH2"/>
@@ -8771,7 +8771,7 @@ We implement security measures designed to protect your information from unautho
         <!--Create Example Three View Controller-->
         <scene sceneID="faP-Xw-w71">
             <objects>
-                <viewController restorationIdentifier="CreateExampleThreeViewController" storyboardIdentifier="CreateExampleThreeViewController" id="R8e-E1-8nD" customClass="CreateExampleThreeViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CreateExampleThreeViewController" storyboardIdentifier="CreateExampleThreeViewController" id="R8e-E1-8nD" customClass="CreateExampleThreeViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rWA-Aw-2Gy"/>
                         <viewControllerLayoutGuide type="bottom" id="gt2-46-cSZ"/>
@@ -8823,7 +8823,7 @@ We implement security measures designed to protect your information from unautho
         <!--Results View Controller-->
         <scene sceneID="HIN-z2-FbI">
             <objects>
-                <viewController restorationIdentifier="ResultsViewController" storyboardIdentifier="ResultsViewController" id="msY-gn-S77" customClass="ResultsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ResultsViewController" storyboardIdentifier="ResultsViewController" id="msY-gn-S77" customClass="ResultsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="96H-B2-NGf"/>
                         <viewControllerLayoutGuide type="bottom" id="hQN-ic-yC0"/>
@@ -8875,7 +8875,7 @@ We implement security measures designed to protect your information from unautho
         <!--Comments Preview View Controller-->
         <scene sceneID="QIJ-E2-SkA">
             <objects>
-                <viewController storyboardIdentifier="CommentsPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmt-dD-Zh0" customClass="CommentsPreviewViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommentsPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmt-dD-Zh0" customClass="CommentsPreviewViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6lU-Js-nXM"/>
                         <viewControllerLayoutGuide type="bottom" id="naw-V8-EuU"/>
@@ -8937,12 +8937,12 @@ GET STARTED!</string>
                                 <exclude reference="NoH-6Z-3rM"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="n1p-UM-FQN"/>
+                                <exclude reference="Axb-Bi-Skt"/>
+                                <exclude reference="ubQ-Ze-HRD"/>
                                 <exclude reference="Hze-Mo-iaQ"/>
                                 <exclude reference="nMR-a4-q2e"/>
                                 <exclude reference="vcC-Cc-tSO"/>
-                                <exclude reference="Axb-Bi-Skt"/>
-                                <exclude reference="ubQ-Ze-HRD"/>
-                                <exclude reference="n1p-UM-FQN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -8951,12 +8951,12 @@ GET STARTED!</string>
                                 <include reference="NoH-6Z-3rM"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="n1p-UM-FQN"/>
+                                <include reference="Axb-Bi-Skt"/>
+                                <include reference="ubQ-Ze-HRD"/>
                                 <include reference="Hze-Mo-iaQ"/>
                                 <include reference="nMR-a4-q2e"/>
                                 <include reference="vcC-Cc-tSO"/>
-                                <include reference="Axb-Bi-Skt"/>
-                                <include reference="ubQ-Ze-HRD"/>
-                                <include reference="n1p-UM-FQN"/>
                             </mask>
                         </variation>
                     </view>
@@ -8972,7 +8972,7 @@ GET STARTED!</string>
         <!--Command Central Preview View Controller-->
         <scene sceneID="Us2-B1-4UJ">
             <objects>
-                <viewController storyboardIdentifier="CommandCentralPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t7v-iS-GE6" customClass="CommandCentralPreviewViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommandCentralPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t7v-iS-GE6" customClass="CommandCentralPreviewViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Ys-yq-Jva"/>
                         <viewControllerLayoutGuide type="bottom" id="9jX-Qc-245"/>
@@ -9024,7 +9024,7 @@ GET STARTED!</string>
         <!--Sent View Controller-->
         <scene sceneID="gt4-5g-BBR">
             <objects>
-                <viewController restorationIdentifier="SentViewController" storyboardIdentifier="SentViewController" id="QoW-bt-DXX" customClass="SentViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SentViewController" storyboardIdentifier="SentViewController" id="QoW-bt-DXX" customClass="SentViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jh8-WL-faM"/>
                         <viewControllerLayoutGuide type="bottom" id="j6z-JA-jjY"/>
@@ -9141,7 +9141,7 @@ GET STARTED!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="TwH-c9-7AT" customClass="SentTableViewCell" customModule="Fripple_App_v1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="TwH-c9-7AT" customClass="SentTableViewCell" customModule="Fripple" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TwH-c9-7AT" id="UhR-ev-aBI">
@@ -9623,7 +9623,7 @@ GET STARTED!</string>
         <!--Contacts View Controller-->
         <scene sceneID="pMe-pY-9BZ">
             <objects>
-                <viewController storyboardIdentifier="ContactsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ydD-co-h9X" customClass="ContactsViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ydD-co-h9X" customClass="ContactsViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g06-ep-sq9"/>
                         <viewControllerLayoutGuide type="bottom" id="1H9-h7-uoW"/>
@@ -9702,7 +9702,7 @@ GET STARTED!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="HBR-N6-UMA" detailTextLabel="hg7-2w-u5v" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="iUL-CJ-p3T" customClass="ContactsTableViewCell" customModule="Fripple_App_v1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="HBR-N6-UMA" detailTextLabel="hg7-2w-u5v" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="iUL-CJ-p3T" customClass="ContactsTableViewCell" customModule="Fripple" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iUL-CJ-p3T" id="y3F-Ar-nZ6">
@@ -9790,7 +9790,7 @@ GET STARTED!</string>
         <!--Page View Controller-->
         <scene sceneID="vdH-Hl-BkW">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Ofa-QJ-FAy" customClass="PageViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Ofa-QJ-FAy" customClass="PageViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOb-y2-507" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -9800,7 +9800,7 @@ GET STARTED!</string>
         <!--Command Central View Controller-->
         <scene sceneID="QdV-Gc-ZKo">
             <objects>
-                <viewController storyboardIdentifier="CommandCentralViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7fb-fA-4Xw" customClass="CommandCentralViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommandCentralViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7fb-fA-4Xw" customClass="CommandCentralViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z6k-BD-En7"/>
                         <viewControllerLayoutGuide type="bottom" id="hew-z5-k7q"/>
@@ -10161,7 +10161,7 @@ GET STARTED!</string>
         <!--New Fripple View Controller-->
         <scene sceneID="kR9-Dp-fej">
             <objects>
-                <viewController restorationIdentifier="NewFrippleViewController" storyboardIdentifier="NewFrippleViewController" id="t3J-Mr-BSI" customClass="NewFrippleViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NewFrippleViewController" storyboardIdentifier="NewFrippleViewController" id="t3J-Mr-BSI" customClass="NewFrippleViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="et0-7m-t0G"/>
                         <viewControllerLayoutGuide type="bottom" id="haY-hU-u69"/>
@@ -10941,7 +10941,7 @@ GET STARTED!</string>
         <!--New Fripple Image View Controller-->
         <scene sceneID="qJv-Dc-gPn">
             <objects>
-                <viewController storyboardIdentifier="NewFrippleImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nkO-K8-L1X" customClass="NewFrippleImageViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewFrippleImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nkO-K8-L1X" customClass="NewFrippleImageViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hch-XY-bx9"/>
                         <viewControllerLayoutGuide type="bottom" id="KpO-p9-bxh"/>
@@ -11635,7 +11635,7 @@ GET STARTED!</string>
         <!--New Fripple Precanned View Controller-->
         <scene sceneID="xvu-9g-Br0">
             <objects>
-                <viewController storyboardIdentifier="NewFripplePrecannedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aTk-hf-qag" customClass="NewFripplePrecannedViewController" customModule="Fripple_App_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewFripplePrecannedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aTk-hf-qag" customClass="NewFripplePrecannedViewController" customModule="Fripple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAr-Wj-4Ur"/>
                         <viewControllerLayoutGuide type="bottom" id="nEG-KN-m1G"/>
@@ -12480,14 +12480,14 @@ GET STARTED!</string>
         <image name="Updated_clear" width="79" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Voe-hH-cqY"/>
         <segue reference="GEt-gv-iEq"/>
+        <segue reference="Voe-hH-cqY"/>
         <segue reference="feN-5J-It6"/>
         <segue reference="5kd-oi-4b0"/>
         <segue reference="Ull-cp-X6O"/>
-        <segue reference="s7r-Fk-kbA"/>
         <segue reference="fph-rq-y0K"/>
         <segue reference="CNY-84-OGc"/>
         <segue reference="XMV-1f-KuN"/>
+        <segue reference="hbm-E2-Oiw"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -189,14 +189,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     func displayAlert(title:String, message:String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
     @IBAction func whySignUp(sender: AnyObject) {
         
         let alert = UIAlertController(title: "Why sign up?", message: "Signing up gives you the ability to send and recieve Fripples from friends as well as track results of Fripples sent or taken. Doesn't that sound great?!", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         
         alert.addAction(UIAlertAction(title: "View Privacy Policy", style: .Default, handler: { (action) -> Void in
             let privacy = self.storyboard?.instantiateViewControllerWithIdentifier("PrivacyViewController") as! PrivacyViewController

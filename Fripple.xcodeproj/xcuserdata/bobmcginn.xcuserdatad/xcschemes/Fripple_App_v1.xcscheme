@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "894FF9371BE573D000B30E06"
-               BuildableName = "Fripple_App_v1.app"
-               BlueprintName = "Fripple_App_v1"
-               ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+               BuildableName = "Fripple.app"
+               BlueprintName = "Fripple"
+               ReferencedContainer = "container:Fripple.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "894FF94B1BE573D000B30E06"
-               BuildableName = "Fripple_App_v1Tests.xctest"
-               BlueprintName = "Fripple_App_v1Tests"
-               ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+               BuildableName = "Fripple.xctest"
+               BlueprintName = "FrippleTests"
+               ReferencedContainer = "container:Fripple.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "894FF9561BE573D000B30E06"
-               BuildableName = "Fripple_App_v1UITests.xctest"
-               BlueprintName = "Fripple_App_v1UITests"
-               ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+               BuildableName = "Fripple.xctest"
+               BlueprintName = "FrippleUITests"
+               ReferencedContainer = "container:Fripple.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "894FF9371BE573D000B30E06"
-            BuildableName = "Fripple_App_v1.app"
-            BlueprintName = "Fripple_App_v1"
-            ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+            BuildableName = "Fripple.app"
+            BlueprintName = "Fripple"
+            ReferencedContainer = "container:Fripple.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "894FF9371BE573D000B30E06"
-            BuildableName = "Fripple_App_v1.app"
-            BlueprintName = "Fripple_App_v1"
-            ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+            BuildableName = "Fripple.app"
+            BlueprintName = "Fripple"
+            ReferencedContainer = "container:Fripple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "894FF9371BE573D000B30E06"
-            BuildableName = "Fripple_App_v1.app"
-            BlueprintName = "Fripple_App_v1"
-            ReferencedContainer = "container:Fripple_App_v1.xcodeproj">
+            BuildableName = "Fripple.app"
+            BlueprintName = "Fripple"
+            ReferencedContainer = "container:Fripple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

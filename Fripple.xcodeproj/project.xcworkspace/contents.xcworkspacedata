@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Fripple_App_v1.xcodeproj">
+      location = "self:/Users/bobmcginn/Documents/Xcode projects/Fripple_App_v1/Fripple.xcodeproj">
    </FileRef>
 </Workspace>

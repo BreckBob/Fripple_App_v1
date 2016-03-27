@@ -61,7 +61,7 @@ class RecoveryEmailViewController: UIViewController, UITextFieldDelegate {
         //Display alert message with confirmation
         let myAlert = UIAlertController(title: "Alert", message: theMessage, preferredStyle: UIAlertControllerStyle.Alert)
         
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             action in
             self.dismissViewControllerAnimated(true, completion: nil)
         }
