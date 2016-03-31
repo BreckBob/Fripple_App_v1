@@ -64,7 +64,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         pfimage.getDataInBackgroundWithBlock({
             (result, error) in
             
-            cell.surveyType.image = UIImage(data: result!, scale: 2.0)
+            cell.surveyType.image = UIImage(data: result!)
         })
         
         let contacts:PFObject = self.surveyData.objectAtIndex(indexPath.row) as! PFObject

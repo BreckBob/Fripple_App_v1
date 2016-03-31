@@ -282,8 +282,8 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
                         
                     }
         
-                    survey["surveyTo"] = listOfContacts
-                    survey["surveyToPhoneNumbers"] = listOfPhoneNumbers
+                    survey["surveyTo"] = self.listOfContacts
+                    survey["surveyToPhoneNumbers"] = self.listOfPhoneNumbers
                     survey["surveyFrom"] = PFUser.currentUser()!.objectForKey("realName")
                     
                     let surveyTypeImage = UIImage(named: "Results_text")
@@ -295,6 +295,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
                     survey.saveInBackgroundWithBlock { (success, error) -> Void in
                         
                         if error == nil {
+                            
                             self.activityIndicator.stopAnimating()
                             self.activityLabel.alpha = 0
                             self.activityView.alpha = 0
@@ -305,6 +306,8 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
                             alert.addAction(UIAlertAction(title: "Great thanks", style: .Default, handler: { (action) -> Void in
                                 let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
                                 self.presentViewController(welcome, animated: false, completion: nil)
+                                
+                                self.notification()
                             }))
                             self.presentViewController(alert, animated: false, completion: nil)
                     
@@ -340,6 +343,31 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Got it thanks", style: .Default, handler: nil))
         self.presentViewController(alert, animated: false, completion: nil)
+    }
+    
+    func notification() {
+        
+        let installation = PFInstallation.currentInstallation()
+        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
+        installation.saveInBackground()
+        
+        let pushQuery = PFInstallation.query()
+        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
+        
+        // Send push notification to query
+        let push = PFPush()
+        push.setQuery(pushQuery) // Set the Installation query
+        push.setMessage("Yo, you've recieved a new Fripple")
+        push.sendPushInBackgroundWithBlock {
+            success, error in
+            
+            if success {
+                print("The push succeeded.")
+            } else {
+                print("The push failed.")
+            }
+        }
+        
     }
 
 }

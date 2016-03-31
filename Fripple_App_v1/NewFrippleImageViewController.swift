@@ -335,6 +335,8 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
                             alert.addAction(UIAlertAction(title: "Great thanks", style: .Default, handler: { (action) -> Void in
                                 let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
                                 self.presentViewController(welcome, animated: false, completion: nil)
+                                
+                                self.notification()
                             }))
                             self.presentViewController(alert, animated: false, completion: nil)
                             
@@ -389,6 +391,31 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Got it thanks", style: .Default, handler: nil))
         self.presentViewController(alert, animated: false, completion: nil)
+    }
+    
+    func notification() {
+        
+        let installation = PFInstallation.currentInstallation()
+        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
+        installation.saveInBackground()
+        
+        let pushQuery = PFInstallation.query()
+        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
+        
+        // Send push notification to query
+        let push = PFPush()
+        push.setQuery(pushQuery) // Set the Installation query
+        push.setMessage("Yo, you've recieved a new Fripple")
+        push.sendPushInBackgroundWithBlock {
+            success, error in
+            
+            if success {
+                print("The push succeeded.")
+            } else {
+                print("The push failed.")
+            }
+        }
+        
     }
     
 }

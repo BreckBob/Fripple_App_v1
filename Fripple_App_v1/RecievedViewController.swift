@@ -70,7 +70,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
         pfimage.getDataInBackgroundWithBlock({
             (result, error) in
             
-            cell.surveyType.image = UIImage(data: result!, scale: 2.0)
+            cell.surveyType.image = UIImage(data: result!)
         })
         
         let dataFormatter = NSDateFormatter()
