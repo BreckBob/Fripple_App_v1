@@ -19,6 +19,7 @@ class TakePrecannedViewController: UIViewController {
     @IBOutlet weak var precannedCircle1: UIImageView!
     @IBOutlet weak var precannedCircle2: UIImageView!
     @IBOutlet weak var precannedCircle3: UIImageView!
+    @IBOutlet weak var precannedOptionsView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
@@ -40,6 +41,9 @@ class TakePrecannedViewController: UIViewController {
         self.anotherSurveyQuestion.layer.cornerRadius = 5
         self.anotherSurveyQuestion.layer.borderWidth = 2
         self.anotherSurveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.precannedOptionsView.layer.borderWidth = 2
+        self.precannedOptionsView.layer.borderColor = borderColor.CGColor
         
         self.anotherSurveyQuestion.alpha = 0
         self.surveyQuestion.alpha = 0

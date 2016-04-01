@@ -21,6 +21,7 @@ class TakeImageViewController: UIViewController {
     @IBOutlet weak var imageCircle2: UIImageView!
     @IBOutlet weak var imageCircle3: UIImageView!
     @IBOutlet weak var imageCircle4: UIImageView!
+    @IBOutlet weak var imageOptionsView: UIView!
     @IBOutlet weak var numberOfContacts: UILabel!
     var images = [UIImageView]()
     var number = 0
@@ -44,6 +45,9 @@ class TakeImageViewController: UIViewController {
         self.surveyQuestion.layer.cornerRadius = 5
         self.surveyQuestion.layer.borderWidth = 2
         self.surveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.imageOptionsView.layer.borderWidth = 2
+        self.imageOptionsView.layer.borderColor = borderColor.CGColor
         
         self.activityView.layer.cornerRadius = 10
         self.activityIndicator.startAnimating()

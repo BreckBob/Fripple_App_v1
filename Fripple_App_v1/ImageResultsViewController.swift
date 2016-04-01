@@ -26,6 +26,7 @@ class ImageResultsViewController: UIViewController {
     @IBOutlet weak var answerCircle2: UIImageView!
     @IBOutlet weak var answerCircle3: UIImageView!
     @IBOutlet weak var answerCircle4: UIImageView!
+    @IBOutlet weak var imageOptionsView: UIView!
     @IBOutlet weak var numberOfComments: UILabel!
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var surveysSentLabel: UILabel!
@@ -52,6 +53,9 @@ class ImageResultsViewController: UIViewController {
         self.surveyQuestion.layer.cornerRadius = 5
         self.surveyQuestion.layer.borderWidth = 2
         self.surveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.imageOptionsView.layer.borderWidth = 2
+        self.imageOptionsView.layer.borderColor = borderColor.CGColor
         
         self.activityView.layer.cornerRadius = 10
         self.activityIndicator.startAnimating()

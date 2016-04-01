@@ -23,6 +23,7 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textCircle2: UIImageView!
     @IBOutlet weak var textCircle3: UIImageView!
     @IBOutlet weak var textCircle4: UIImageView!
+    @IBOutlet weak var textOptionsView: UIView!
     @IBOutlet weak var numberOfContacts: UILabel!
     var textFields = [UITextField]()
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -47,6 +48,9 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         self.anotherSurveyQuestion.layer.cornerRadius = 5
         self.anotherSurveyQuestion.layer.borderWidth = 2
         self.anotherSurveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.textOptionsView.layer.borderWidth = 2
+        self.textOptionsView.layer.borderColor = borderColor.CGColor
         
         textFields = [textAnswer1, textAnswer2, textAnswer3, textAnswer4]
         

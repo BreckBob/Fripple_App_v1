@@ -21,6 +21,7 @@ class PrecannedResultsViewController: UIViewController {
     @IBOutlet weak var answerCircle1: UIImageView!
     @IBOutlet weak var answerCircle2: UIImageView!
     @IBOutlet weak var answerCircle3: UIImageView!
+    @IBOutlet weak var PrecannedOptionsView: UIView!
     @IBOutlet weak var numberOfComments: UILabel!
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var surveysSentLabel: UILabel!
@@ -48,6 +49,9 @@ class PrecannedResultsViewController: UIViewController {
         self.anotherSurveyQuestion.layer.cornerRadius = 5
         self.anotherSurveyQuestion.layer.borderWidth = 2
         self.anotherSurveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.PrecannedOptionsView.layer.borderWidth = 2
+        self.PrecannedOptionsView.layer.borderColor = borderColor.CGColor
         
         self.anotherSurveyQuestion.alpha = 0
         self.surveyQuestion.alpha = 0

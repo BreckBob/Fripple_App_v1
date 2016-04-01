@@ -8,8 +8,9 @@
 
 import UIKit
 import Parse
+import MessageUI
 
-class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet weak var imageQuestionContainer: UITextView!
     var questionText:String!
@@ -43,6 +44,8 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
+    
+    var textComposer:MFMessageComposeViewController?
     
     //Getting the count of contacts
     @IBAction func unwindFromContacts (sender: UIStoryboardSegue){
@@ -330,15 +333,22 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
                             self.activityView.alpha = 0
                             UIApplication.sharedApplication().endIgnoringInteractionEvents()
                             
-                            let alert = UIAlertController(title: "Fripple sent", message: "Your Fripple has been successfully sent", preferredStyle: UIAlertControllerStyle.Alert)
-                            
-                            alert.addAction(UIAlertAction(title: "Great thanks", style: .Default, handler: { (action) -> Void in
+                            //Present and alert to let the user know the fripple was saved and ask them to tell their friends
+                            let signInTapAlert = UIAlertController(title: "Success!", message: "You're Fripple was successfully uploaded. Let your friend(s) know there's a new one to respond to", preferredStyle: .Alert)
+                            let signUp = UIAlertAction(title: "OK", style: .Default) { (action) in
+                                //Send friend text message
+                                self.sendText()
+                                
+                            }
+                            signInTapAlert.addAction(signUp)
+                            let privacyInfo = UIAlertAction(title: "No, that's ok", style: .Default) { (action) in
+                                //Go back to command center
                                 let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
                                 self.presentViewController(welcome, animated: false, completion: nil)
-                                
-                                self.notification()
-                            }))
-                            self.presentViewController(alert, animated: false, completion: nil)
+                            }
+                            signInTapAlert.addAction(privacyInfo)
+                            
+                            self.presentViewController(signInTapAlert, animated: false, completion: nil)
                             
                         }
                         else {
@@ -393,29 +403,77 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
         self.presentViewController(alert, animated: false, completion: nil)
     }
     
-    func notification() {
+    func sendText() {
         
-        let installation = PFInstallation.currentInstallation()
-        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
-        installation.saveInBackground()
-        
-        let pushQuery = PFInstallation.query()
-        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
-        
-        // Send push notification to query
-        let push = PFPush()
-        push.setQuery(pushQuery) // Set the Installation query
-        push.setMessage("Yo, you've recieved a new Fripple")
-        push.sendPushInBackgroundWithBlock {
-            success, error in
+        //Check if device can send text
+        if MFMessageComposeViewController.canSendText() {
+            //Create new message object
+            textComposer = MFMessageComposeViewController()
             
-            if success {
-                print("The push succeeded.")
-            } else {
-                print("The push failed.")
-            }
+            //Set view controller as message delegate
+            textComposer?.messageComposeDelegate = self
+            
+            //Set up text
+            textComposer?.recipients = self.listOfPhoneNumbers
+            textComposer?.body = "Yo, I just sent you a new Fripple: \(self.imageQuestionContainer.text).\nGo to the app to submit your response"
+            
+            //Present the message controller
+            self.presentViewController(self.textComposer!, animated: true, completion: nil)
+        }
+        else {
+            //User can't send text
+            NSLog("Device can't send text messages")
         }
         
     }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        switch result.rawValue {
+        case MessageComposeResultCancelled.rawValue :
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            //Go back to command center
+            let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+            self.presentViewController(welcome, animated: false, completion: nil)
+            
+        case MessageComposeResultFailed.rawValue :
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+        case MessageComposeResultSent.rawValue :
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            //Go back to command center
+            let welcome = self.storyboard?.instantiateViewControllerWithIdentifier("ContainerViewController") as! ContainerViewController
+            self.presentViewController(welcome, animated: false, completion: nil)
+            
+        default:
+            break
+        }
+    }
+    
+//    func notification() {
+//        
+//        let installation = PFInstallation.currentInstallation()
+//        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
+//        installation.saveInBackground()
+//        
+//        let pushQuery = PFInstallation.query()
+//        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
+//        
+//        // Send push notification to query
+//        let push = PFPush()
+//        push.setQuery(pushQuery) // Set the Installation query
+//        push.setMessage("Yo, you've recieved a new Fripple")
+//        push.sendPushInBackgroundWithBlock {
+//            success, error in
+//            
+//            if success {
+//                print("The push succeeded.")
+//            } else {
+//                print("The push failed.")
+//            }
+//        }
+//        
+//    }
     
 }

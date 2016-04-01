@@ -27,6 +27,7 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var answerCircle2: UIImageView!
     @IBOutlet weak var answerCircle3: UIImageView!
     @IBOutlet weak var answerCircle4: UIImageView!
+    @IBOutlet weak var TextOptionsView: UIView!
     @IBOutlet weak var numberOfComments: UILabel!
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var surveysSentLabel: UILabel!
@@ -56,6 +57,9 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
         self.anotherSurveyQuestion.layer.cornerRadius = 5
         self.anotherSurveyQuestion.layer.borderWidth = 2
         self.anotherSurveyQuestion.layer.borderColor = borderColor.CGColor
+        
+        self.TextOptionsView.layer.borderWidth = 2
+        self.TextOptionsView.layer.borderColor = borderColor.CGColor
         
         textFields = [textAnswer1, textAnswer2, textAnswer3, textAnswer4]
         
