@@ -16,6 +16,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
     var surveyData:NSMutableArray = NSMutableArray()
     var surveyType:String!
     var surveyID:String!
+    var viewPresenting = "Recieved"
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
@@ -188,33 +189,37 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
             
             let toTakeTextFrippleViewController = segue.destinationViewController as! TakeTextFrippleViewController
             toTakeTextFrippleViewController.surveyIdSelected = surveyID
+            toTakeTextFrippleViewController.viewDoingThePresenting = viewPresenting
         }
         if (segue.identifier == "TextResultsSegue") {
             
             let toTextResultsViewController = segue.destinationViewController as! TextResultsViewController
             toTextResultsViewController.surveyIdSelected = surveyID
+            toTextResultsViewController.viewDoingThePresenting = viewPresenting
         }
         if (segue.identifier == "TakeImageSegue") {
             
             let toTakeImageViewController = segue.destinationViewController as! TakeImageViewController
             toTakeImageViewController.surveyIdSelected = surveyID
-            
+            toTakeImageViewController.viewDoingThePresenting = viewPresenting
         }
         if (segue.identifier == "ImageResultsSegue") {
             
             let toImageResultsViewController = segue.destinationViewController as! ImageResultsViewController
             toImageResultsViewController.surveyIdSelected = surveyID
+            toImageResultsViewController.viewDoingThePresenting = viewPresenting
         }
         if (segue.identifier == "TakePrecannedSegue") {
             
             let toTakePrecannedViewController = segue.destinationViewController as! TakePrecannedViewController
             toTakePrecannedViewController.surveyIdSelected = surveyID
+            toTakePrecannedViewController.viewDoingThePresenting = viewPresenting
         }
         if (segue.identifier == "PrecannedResultsSegue") {
             
             let toPrecannedResultsViewController = segue.destinationViewController as! PrecannedResultsViewController
             toPrecannedResultsViewController.surveyIdSelected = surveyID
-            
+            toPrecannedResultsViewController.viewDoingThePresenting = viewPresenting
         }
         
         // this gets a reference to the screen that we're about to transition to
@@ -249,7 +254,6 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dispatch_async(dispatch_get_main_queue()) {
                         self.hiddenView.alpha = 0
-                        
                         self.activityIndicator.stopAnimating()
                         self.activityLabel.alpha = 0
                         self.activityView.alpha = 0
@@ -264,7 +268,7 @@ class RecievedViewController: UIViewController, UITableViewDataSource, UITableVi
     
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(RecievedViewController.handleRefresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
         return refreshControl
     }()

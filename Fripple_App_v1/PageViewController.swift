@@ -62,7 +62,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         
         let identifier = viewController.restorationIdentifier
         var newIndex = self.identifiers.indexOfObject(identifier!)
-        newIndex++
+        newIndex += 1
         if(newIndex >= self.identifiers.count) {
             return nil
         }
@@ -77,7 +77,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         if(newIndex <= 0) {
             return nil
         }
-        newIndex--
+        newIndex -= 1
         return self.viewControllerAtIndex(newIndex)
     }
     

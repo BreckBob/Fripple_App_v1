@@ -33,9 +33,16 @@ class TakeImageViewController: UIViewController {
     let tapAnswer3 = UITapGestureRecognizer()
     let tapAnswer4 = UITapGestureRecognizer()
     var selectedAnswer = 0
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
+    var viewDoingThePresenting:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
         
         //Set up formats for view and load fripple data
         images = [answerImage1, answerImage2, answerImage3, answerImage4]
@@ -59,22 +66,22 @@ class TakeImageViewController: UIViewController {
         loadData()
         
         //Add the tap gesture to select text option 1
-        self.tapAnswer1.addTarget(self, action: "tappedAnswer1")
+        self.tapAnswer1.addTarget(self, action: #selector(TakeImageViewController.tappedAnswer1))
         self.imageCircle1.addGestureRecognizer(tapAnswer1)
         self.imageCircle1.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 2
-        self.tapAnswer2.addTarget(self, action: "tappedAnswer2")
+        self.tapAnswer2.addTarget(self, action: #selector(TakeImageViewController.tappedAnswer2))
         self.imageCircle2.addGestureRecognizer(tapAnswer2)
         self.imageCircle2.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 3
-        self.tapAnswer3.addTarget(self, action: "tappedAnswer3")
+        self.tapAnswer3.addTarget(self, action: #selector(TakeImageViewController.tappedAnswer3))
         self.imageCircle3.addGestureRecognizer(tapAnswer3)
         self.imageCircle3.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 4
-        self.tapAnswer4.addTarget(self, action: "tappedAnswer4")
+        self.tapAnswer4.addTarget(self, action: #selector(TakeImageViewController.tappedAnswer4))
         self.imageCircle4.addGestureRecognizer(tapAnswer4)
         self.imageCircle4.userInteractionEnabled = true
         
@@ -106,7 +113,7 @@ class TakeImageViewController: UIViewController {
                         self.numberOfContacts.text = "\(numberOfContactsSentTo.count)"
                         
                         for image in self.images {
-                            self.number++
+                            self.number += 1
                             if let questionImageFile = object.objectForKey("answerImage\(self.number)") as? PFFile {
                                 questionImageFile.getDataInBackgroundWithBlock {(imageData, error) -> Void in
                                     if error == nil {

@@ -27,9 +27,16 @@ class TakePrecannedViewController: UIViewController {
     let tapAnswer2 = UITapGestureRecognizer()
     let tapAnswer3 = UITapGestureRecognizer()
     var selectedAnswer = 0
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
+    var viewDoingThePresenting:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
         
         //Set up formats for view and load fripple data
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -57,17 +64,17 @@ class TakePrecannedViewController: UIViewController {
         loadData()
         
         //Add the tap gesture to select text option 1
-        self.tapAnswer1.addTarget(self, action: "tappedAnswer1")
+        self.tapAnswer1.addTarget(self, action: #selector(TakePrecannedViewController.tappedAnswer1))
         self.precannedCircle1.addGestureRecognizer(tapAnswer1)
         self.precannedCircle1.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 2
-        self.tapAnswer2.addTarget(self, action: "tappedAnswer2")
+        self.tapAnswer2.addTarget(self, action: #selector(TakePrecannedViewController.tappedAnswer2))
         self.precannedCircle2.addGestureRecognizer(tapAnswer2)
         self.precannedCircle2.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 3
-        self.tapAnswer3.addTarget(self, action: "tappedAnswer3")
+        self.tapAnswer3.addTarget(self, action: #selector(TakePrecannedViewController.tappedAnswer3))
         self.precannedCircle3.addGestureRecognizer(tapAnswer3)
         self.precannedCircle3.userInteractionEnabled = true
     }

@@ -68,26 +68,26 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
         self.imageQuestionContainer.layer.borderColor = borderColor.CGColor
         
         //Set up notifications for keyboard
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NewFrippleImageViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NewFrippleImageViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         self.answersContainer.layer.borderWidth = 2
         self.answersContainer.layer.borderColor = borderColor.CGColor
 
         //Add tap gestures to image views
-        tapGesture1.addTarget(self, action: "tappedImportImage1")
+        tapGesture1.addTarget(self, action: #selector(NewFrippleImageViewController.tappedImportImage1) )
         addImage1.addGestureRecognizer(tapGesture1)
         addImage1.userInteractionEnabled = true
         
-        tapGesture2.addTarget(self, action: "tappedImportImage2")
+        tapGesture2.addTarget(self, action: #selector(NewFrippleImageViewController.tappedImportImage2))
         addImage2.addGestureRecognizer(tapGesture2)
         addImage2.userInteractionEnabled = true
         
-        tapGesture3.addTarget(self, action: "tappedImportImage3")
+        tapGesture3.addTarget(self, action: #selector(NewFrippleImageViewController.tappedImportImage3))
         addImage3.addGestureRecognizer(tapGesture3)
         addImage3.userInteractionEnabled = true
         
-        tapGesture4.addTarget(self, action: "tappedImportImage4")
+        tapGesture4.addTarget(self, action: #selector(NewFrippleImageViewController.tappedImportImage4))
         addImage4.addGestureRecognizer(tapGesture4)
         addImage4.userInteractionEnabled = true
         
@@ -334,7 +334,7 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
                             UIApplication.sharedApplication().endIgnoringInteractionEvents()
                             
                             //Present and alert to let the user know the fripple was saved and ask them to tell their friends
-                            let signInTapAlert = UIAlertController(title: "Success!", message: "You're Fripple was successfully uploaded. Let your friend(s) know there's a new one to respond to", preferredStyle: .Alert)
+                            let signInTapAlert = UIAlertController(title: "Success!", message: "You're Fripple was successfully uploaded. Text your friend(s) to let them know there's a new one to respond to", preferredStyle: .Alert)
                             let signUp = UIAlertAction(title: "OK", style: .Default) { (action) in
                                 //Send friend text message
                                 self.sendText()
@@ -450,30 +450,4 @@ class NewFrippleImageViewController: UIViewController, UITextViewDelegate, UINav
             break
         }
     }
-    
-//    func notification() {
-//        
-//        let installation = PFInstallation.currentInstallation()
-//        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
-//        installation.saveInBackground()
-//        
-//        let pushQuery = PFInstallation.query()
-//        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
-//        
-//        // Send push notification to query
-//        let push = PFPush()
-//        push.setQuery(pushQuery) // Set the Installation query
-//        push.setMessage("Yo, you've recieved a new Fripple")
-//        push.sendPushInBackgroundWithBlock {
-//            success, error in
-//            
-//            if success {
-//                print("The push succeeded.")
-//            } else {
-//                print("The push failed.")
-//            }
-//        }
-//        
-//    }
-    
 }

@@ -32,7 +32,6 @@
 		896775911C7D7868001D0818 /* PrecannedResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896775901C7D7868001D0818 /* PrecannedResultsViewController.swift */; };
 		897C4ED11C51F36600AE52DB /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C4ED01C51F36600AE52DB /* ContactsViewController.swift */; };
 		897C4ED31C52CF1900AE52DB /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C4ED21C52CF1900AE52DB /* ContactsTableViewCell.swift */; };
-		897C4ED51C57270E00AE52DB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C4ED41C57270E00AE52DB /* ContactsModel.swift */; };
 		897C4ED71C57278A00AE52DB /* ContactsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C4ED61C57278A00AE52DB /* ContactsClass.swift */; };
 		899F3C7B1BF81078000907EE /* NewFripplePrecannedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899F3C7A1BF81078000907EE /* NewFripplePrecannedViewController.swift */; };
 		89AFF5091C1E6EBD00CBF88C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AFF5081C1E6EBD00CBF88C /* SignUpViewController.swift */; };
@@ -144,7 +143,6 @@
 		896775901C7D7868001D0818 /* PrecannedResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecannedResultsViewController.swift; sourceTree = "<group>"; };
 		897C4ED01C51F36600AE52DB /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		897C4ED21C52CF1900AE52DB /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
-		897C4ED41C57270E00AE52DB /* ContactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		897C4ED61C57278A00AE52DB /* ContactsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsClass.swift; sourceTree = "<group>"; };
 		899F3C7A1BF81078000907EE /* NewFripplePrecannedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFripplePrecannedViewController.swift; sourceTree = "<group>"; };
 		89AFF5081C1E6EBD00CBF88C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -298,7 +296,6 @@
 				8948E0321BFAB29C000690DB /* NewFrippleImageViewController.swift */,
 				899F3C7A1BF81078000907EE /* NewFripplePrecannedViewController.swift */,
 				897C4ED61C57278A00AE52DB /* ContactsClass.swift */,
-				897C4ED41C57270E00AE52DB /* ContactsModel.swift */,
 				897C4ED21C52CF1900AE52DB /* ContactsTableViewCell.swift */,
 				897C4ED01C51F36600AE52DB /* ContactsViewController.swift */,
 				896775861C6DA146001D0818 /* TakeTextFrippleViewController.swift */,
@@ -574,7 +571,6 @@
 				896775871C6DA146001D0818 /* TakeTextFrippleViewController.swift in Sources */,
 				8967758D1C7D6B6F001D0818 /* TextResultsViewController.swift in Sources */,
 				89FEBEEA1CA24A870055935A /* CommandCentralPreviewViewController.swift in Sources */,
-				897C4ED51C57270E00AE52DB /* ContactsModel.swift in Sources */,
 				89B808B61C057B180067316F /* CommandCentralViewController.swift in Sources */,
 				892E1CF91C14CB3C00F01138 /* RecievedViewController.swift in Sources */,
 				89F5E4E11BF1A456009C56B8 /* NewFrippleViewController.swift in Sources */,
@@ -676,8 +672,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -695,7 +692,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Fripple_App_v1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1";
 				PRODUCT_NAME = Fripple;
@@ -765,7 +762,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -804,8 +801,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -823,7 +821,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Fripple_App_v1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1";
 				PRODUCT_NAME = Fripple;
@@ -845,7 +843,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Fripple_App_v1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "REM-Designs.Fripple-App-v1";
 				PRODUCT_NAME = Fripple;

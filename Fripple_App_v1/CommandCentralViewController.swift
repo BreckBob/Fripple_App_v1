@@ -38,11 +38,11 @@ class CommandCentralViewController: UIViewController {
             
             backButton.alpha = 0
             
-            let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("swipedViewRight:"))
+            let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(CommandCentralViewController.swipedViewRight(_:)))
             rightSwipe.direction = .Right
             self.view.addGestureRecognizer(rightSwipe)
             
-            let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("swipedViewLeft:"))
+            let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(CommandCentralViewController.swipedViewLeft(_:)))
             leftSwipe.direction = .Left
             self.view.addGestureRecognizer(leftSwipe)
             

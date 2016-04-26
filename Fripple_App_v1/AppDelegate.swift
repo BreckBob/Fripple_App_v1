@@ -33,21 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         
         
+        
         //Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         //Code to incorporate Facebook. Not right now cause cannot bring in phone number
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
-        
-//        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil)
-//        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-//        UIApplication.sharedApplication().registerForRemoteNotifications()
-//        
-//        if let launchOptions = launchOptions as? [String : AnyObject] {
-//            if let notificationDictionary = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey] as? [NSObject : AnyObject] {
-//                self.application(application, didReceiveRemoteNotification: notificationDictionary)
-//            }
-//        }
         
         return true
     }
@@ -87,16 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 sourceApplication: sourceApplication,
                 annotation: annotation)
     }
-
-//    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-//        let installation = PFInstallation.currentInstallation()
-//        installation.setDeviceTokenFromData(deviceToken)
-//        installation.saveInBackground()
-//    }
-//    
-//    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-//        PFPush.handlePush(userInfo)
-//    }
 
 }
 

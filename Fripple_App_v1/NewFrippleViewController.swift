@@ -116,11 +116,11 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
         self.answersContainer.layer.borderWidth = 2
         self.answersContainer.layer.borderColor = borderColor.CGColor
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NewFrippleViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NewFrippleViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         //Add the tap gesture to the main image
-        self.tapGesture.addTarget(self, action: "tappedImportImage")
+        self.tapGesture.addTarget(self, action: #selector(NewFrippleViewController.tappedImportImage))
         self.mainImage.addGestureRecognizer(tapGesture)
         self.mainImage.userInteractionEnabled = true
         
@@ -206,7 +206,8 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
             performSegueWithIdentifier("toContacts", sender: sender)
         
             } else {
-                displayAlert("Add question/answers", message: "Make sure you have a question with at least two answer choices before adding friends")
+            
+            displayAlert("Add question/answers", message: "Make sure you have a question with at least two answer choices before adding friends")
         }
         
     }
@@ -305,7 +306,7 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
                             UIApplication.sharedApplication().endIgnoringInteractionEvents()
                             
                             //Present and alert to let the user know the fripple was saved and ask them to tell their friends
-                            let signInTapAlert = UIAlertController(title: "Success!", message: "You're Fripple was successfully uploaded. Let your friend(s) know there's a new one to respond to", preferredStyle: .Alert)
+                            let signInTapAlert = UIAlertController(title: "Success!", message: "You're Fripple was successfully uploaded. Text your friend(s) to let them know there's a new one to respond to", preferredStyle: .Alert)
                             let signUp = UIAlertAction(title: "OK", style: .Default) { (action) in
                                 //Send friend text message
                                 self.sendText()
@@ -402,30 +403,5 @@ class NewFrippleViewController: UIViewController, UITextViewDelegate, UITextFiel
             break
         }
     }
-    
-//    func notification() {
-//        
-//        let installation = PFInstallation.currentInstallation()
-//        installation["notificationPhoneNumbers"] = self.listOfPhoneNumbers
-//        installation.saveInBackground()
-//        
-//        let pushQuery = PFInstallation.query()
-//        pushQuery?.whereKey("notificationPhoneNumbers", equalTo: PFUser.currentUser()!.objectForKey("phoneNumber")!)
-//        
-//        // Send push notification to query
-//        let push = PFPush()
-//        push.setQuery(pushQuery) // Set the Installation query
-//        push.setMessage("Yo, you've recieved a new Fripple")
-//        push.sendPushInBackgroundWithBlock {
-//            success, error in
-//            
-//            if success {
-//                print("The push succeeded.")
-//            } else {
-//                print("The push failed.")
-//            }
-//        }
-//        
-//    }
 
 }

@@ -37,6 +37,9 @@ class ImageResultsViewController: UIViewController {
     var answer2Array = NSMutableArray()
     var answer3Array = NSMutableArray()
     var answer4Array = NSMutableArray()
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
+    var viewDoingThePresenting:String?
     
     override func viewDidAppear(animated: Bool) {
         self.retrieveComments()
@@ -44,6 +47,13 @@ class ImageResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
+        else {
+            self.backButtonTwo.alpha = 0
+        }
         
         //Layout formats for answer options
         images = [answerImage1, answerImage2, answerImage3, answerImage4]
@@ -129,7 +139,7 @@ class ImageResultsViewController: UIViewController {
                         self.surveyQuestion.text = questionText
                         
                         for image in self.images {
-                            self.number++
+                            self.number += 1
                             
                             if let questionImageFile = object.objectForKey("answerImage\(self.number)") as? PFFile {
                                 questionImageFile.getDataInBackgroundWithBlock {(imageData, error) -> Void in
@@ -250,7 +260,7 @@ class ImageResultsViewController: UIViewController {
         
         let toCommentsViewController = segue.destinationViewController as! CommentsViewController
         toCommentsViewController.surveyId = surveyIdSelected
-        
+        toCommentsViewController.presentingView = viewDoingThePresenting
     }
     
 }

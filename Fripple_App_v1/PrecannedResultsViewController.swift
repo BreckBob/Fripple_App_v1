@@ -31,6 +31,9 @@ class PrecannedResultsViewController: UIViewController {
     var answer1Array = NSMutableArray()
     var answer2Array = NSMutableArray()
     var answer3Array = NSMutableArray()
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
+    var viewDoingThePresenting:String?
     
     override func viewDidAppear(animated: Bool) {
         self.retrieveComments()
@@ -38,6 +41,13 @@ class PrecannedResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
+        else {
+            self.backButtonTwo.alpha = 0
+        }
 
         //Layout formats for answer options
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -234,7 +244,7 @@ class PrecannedResultsViewController: UIViewController {
         
         let toCommentsViewController = segue.destinationViewController as! CommentsViewController
         toCommentsViewController.surveyId = surveyIdSelected
-        
+        toCommentsViewController.presentingView = viewDoingThePresenting
     }
     
 }

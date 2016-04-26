@@ -34,9 +34,17 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
     let tapAnswer3 = UITapGestureRecognizer()
     let tapAnswer4 = UITapGestureRecognizer()
     var selectedAnswer = 0
+    var viewDoingThePresenting:String?
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
         
         //Set up formats for view and load fripple data
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -80,22 +88,22 @@ class TakeTextFrippleViewController: UIViewController, UITextFieldDelegate {
         loadData()
         
         //Add the tap gesture to select text option 1
-        self.tapAnswer1.addTarget(self, action: "tappedAnswer1")
+        self.tapAnswer1.addTarget(self, action: #selector(TakeTextFrippleViewController.tappedAnswer1))
         self.textCircle1.addGestureRecognizer(tapAnswer1)
         self.textCircle1.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 2
-        self.tapAnswer2.addTarget(self, action: "tappedAnswer2")
+        self.tapAnswer2.addTarget(self, action: #selector(TakeTextFrippleViewController.tappedAnswer2))
         self.textCircle2.addGestureRecognizer(tapAnswer2)
         self.textCircle2.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 3
-        self.tapAnswer3.addTarget(self, action: "tappedAnswer3")
+        self.tapAnswer3.addTarget(self, action: #selector(TakeTextFrippleViewController.tappedAnswer3))
         self.textCircle3.addGestureRecognizer(tapAnswer3)
         self.textCircle3.userInteractionEnabled = true
         
         //Add the tap gesture to select text option 4
-        self.tapAnswer4.addTarget(self, action: "tappedAnswer4")
+        self.tapAnswer4.addTarget(self, action: #selector(TakeTextFrippleViewController.tappedAnswer4))
         self.textCircle4.addGestureRecognizer(tapAnswer4)
         self.textCircle4.userInteractionEnabled = true
         

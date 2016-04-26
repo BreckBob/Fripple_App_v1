@@ -43,7 +43,7 @@ class SplashViewController: UIViewController {
             self.activityView.alpha = 0
             
             self.soundEffect!.play()
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "doAnimation", userInfo: nil, repeats: true)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(SplashViewController.doAnimation), userInfo: nil, repeats: true)
         }
         
     }
@@ -67,7 +67,7 @@ class SplashViewController: UIViewController {
             }
         }
         else {
-            counter++
+            counter += 1
         }
         logo.image = UIImage(named: "Logo_main_\(counter).png")
     }

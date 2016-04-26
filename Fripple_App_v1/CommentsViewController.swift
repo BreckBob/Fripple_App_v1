@@ -17,17 +17,26 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var dockViewHeightConstraint: NSLayoutConstraint!
     var surveyId:String!
-    var presentingView:String!
+    var presentingView:String?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var hiddenView: UIView!
     @IBOutlet weak var commentsStatusLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.commentsStatusLabel.alpha = 0
+        
+        if self.presentingView == "Recieved" {
+            self.backButton.alpha = 0
+        }
+        else {
+            self.backButtonTwo.alpha = 0
+        }
         
         messageTableView.backgroundColor = UIColor(red: 246/255, green: 245/255, blue: 245/255, alpha: 1)
 
@@ -36,7 +45,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.messageTextField.delegate = self
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: "tableViewTapped")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(CommentsViewController.tableViewTapped))
         self.messageTableView.addGestureRecognizer(tapGesture)
         
         self.retrieveComments()

@@ -32,6 +32,9 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var surveysSentLabel: UILabel!
     var presentedVC = "Text"
+    var viewDoingThePresenting:String?
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonTwo: UIButton!
     
     var surveysSent: NSMutableArray!
     var responseCount:Int!
@@ -46,6 +49,13 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.viewDoingThePresenting == "Recieved" {
+            self.backButton.alpha = 0
+        }
+        else {
+            self.backButtonTwo.alpha = 0
+        }
         
         //Layout formats for answer options
         let borderColor = UIColor(colorLiteralRed: 125.0/255.0, green: 210.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -290,7 +300,7 @@ class TextResultsViewController: UIViewController, UITextFieldDelegate {
     
         let toCommentsViewController = segue.destinationViewController as! CommentsViewController
         toCommentsViewController.surveyId = surveyIdSelected
-        toCommentsViewController.presentingView = presentedVC
+        toCommentsViewController.presentingView = viewDoingThePresenting
     
     }
     
