@@ -403,7 +403,6 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
                         if mobileLabel == "iPhone" {
                             let mobileNumber = ABMultiValueCopyValueAtIndex(phoneNumbers, counter).takeRetainedValue() as! String
                             
-                            
                             contact.phoneNumber = mobileNumber
                             
                             let name = object.takeRetainedValue() as NSString
