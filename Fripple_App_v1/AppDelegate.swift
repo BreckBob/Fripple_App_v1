@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Parse code to enable local datastore. Not being used currently
         Parse.enableLocalDatastore()
         
+        // Initialize Parse.
         
         
         //Track statistics around application opens.
